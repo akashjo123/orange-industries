@@ -3,11 +3,13 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { capabilities } from "@/data/capabilities";
 
 export default function CapabilitiesSection() {
+  const router = useRouter();
   const [activeId, setActiveId] = useState(capabilities[0].id);
 
   const activeCapability = capabilities.find((c) => c.id === activeId) || capabilities[0];
@@ -53,7 +55,7 @@ export default function CapabilitiesSection() {
                 <div
                   key={cap.id}
                   onMouseEnter={() => setActiveId(cap.id)}
-                  onClick={() => setActiveId(cap.id)}
+                  onClick={() => router.push('/services')}
                   className={`cursor-pointer p-6 transition-all duration-300 relative rounded-xl ${
                     isActive
                       ? "bg-white shadow-lg"
