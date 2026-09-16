@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import Threads from "./Threads";
+import SynapticShift from "./SynapticShift";
 import { ArrowUpRight } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { companyData } from "@/data/company";
@@ -23,11 +23,14 @@ export default function Hero() {
     <section ref={ref} className="relative min-h-screen flex flex-col justify-center pt-32 pb-24 overflow-hidden bg-[#1f1d1d] border-b border-zinc-800">
       {/* Background Animation Container */}
       <motion.div style={{ y: backgroundY }} className="absolute inset-0 z-0 h-[120%] -top-[10%] bg-[#1f1d1d]">
-        <Threads 
-          speed={0.005} 
-          amplitude={60} 
+        <SynapticShift 
+          speed={0.35} 
+          scale={0.55} 
+          intensity={1.5} 
           color="#FF5A00" 
-          count={45} 
+          falloff={1.15} 
+          complexity={10} 
+          breathing={true} 
         />
         {/* Gradient only on the left side to keep text readable without washing out the animation */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#1f1d1d] via-[#1f1d1d]/85 to-transparent w-full lg:w-[65%]" />
