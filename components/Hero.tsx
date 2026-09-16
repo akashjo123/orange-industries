@@ -20,9 +20,9 @@ export default function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   return (
-    <section ref={ref} className="relative min-h-screen flex flex-col justify-center pt-32 pb-24 overflow-hidden bg-zinc-950 border-b border-zinc-800">
+    <section ref={ref} className="relative min-h-screen flex flex-col justify-center pt-32 pb-24 overflow-hidden bg-[#1f1d1d] border-b border-zinc-800">
       {/* Background Animation Container */}
-      <motion.div style={{ y: backgroundY }} className="absolute inset-0 z-0 h-[120%] -top-[10%] bg-zinc-950">
+      <motion.div style={{ y: backgroundY }} className="absolute inset-0 z-0 h-[120%] -top-[10%] bg-[#1f1d1d]">
         <SynapticShift 
           speed={0.35} 
           scale={0.55} 
@@ -33,7 +33,7 @@ export default function Hero() {
           breathing={true} 
         />
         {/* Gradient only on the left side to keep text readable without washing out the animation */}
-        <div className="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/85 to-transparent w-full lg:w-[65%]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1f1d1d] via-[#1f1d1d]/85 to-transparent w-full lg:w-[65%]" />
       </motion.div>
 
       {/* Main Hero Content */}

@@ -21,13 +21,13 @@ export default function SectorsPage() {
         description="Tailored production capabilities for event activations, commercial rollouts, and specialized public sector signage."
       />
 
-      <section className="py-20 bg-zinc-950">
+      <section className="py-20 bg-[#FAF7F2]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
           {sectors.map((sector) => (
             <div
               key={sector.id}
               id={sector.id}
-              className="scroll-mt-32 bg-zinc-900 rounded-2xl p-8 sm:p-12 relative overflow-hidden shadow-md"
+              className="scroll-mt-32 bg-white rounded-2xl p-8 sm:p-12 relative overflow-hidden shadow-md"
             >
               <div className="flex items-center justify-between pb-6 mb-8">
                 <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-widest">
@@ -40,20 +40,20 @@ export default function SectorsPage() {
 
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div className="lg:col-span-7 space-y-6">
-                  <h2 className="text-3xl font-extrabold text-zinc-50 tracking-tight">
+                  <h2 className="text-3xl font-extrabold text-zinc-900 tracking-tight">
                     {sector.title}
                   </h2>
 
-                  <p className="text-base text-zinc-300 leading-relaxed font-sans">
+                  <p className="text-base text-zinc-700 leading-relaxed font-sans">
                     {sector.longDescription}
                   </p>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                    <div className="bg-zinc-950 p-4 rounded-xl space-y-2 shadow-sm">
+                    <div className="bg-[#FAF7F2] p-4 rounded-xl space-y-2 shadow-sm">
                       <span className="font-mono text-[11px] text-brand-orange uppercase tracking-wider block font-bold">
                         TARGET CLIENT CATEGORIES:
                       </span>
-                      <ul className="space-y-1 text-xs text-zinc-300 font-mono">
+                      <ul className="space-y-1 text-xs text-zinc-700 font-mono">
                         {sector.targetClients.map((client, i) => (
                           <li key={i} className="flex items-center gap-1.5">
                             <CheckCircle2 className="w-3.5 h-3.5 text-brand-orange shrink-0" />
@@ -63,11 +63,11 @@ export default function SectorsPage() {
                       </ul>
                     </div>
 
-                    <div className="bg-zinc-950 p-4 rounded-xl space-y-2 shadow-sm">
+                    <div className="bg-[#FAF7F2] p-4 rounded-xl space-y-2 shadow-sm">
                       <span className="font-mono text-[11px] text-brand-orange uppercase tracking-wider block font-bold">
                         DELIVERED STRENGTHS:
                       </span>
-                      <ul className="space-y-1 text-xs text-zinc-300 font-mono">
+                      <ul className="space-y-1 text-xs text-zinc-700 font-mono">
                         {sector.capabilitiesProvided.map((cap, i) => (
                           <li key={i} className="flex items-center gap-1.5">
                             <span className="w-1.5 h-1.5 rounded-full bg-brand-orange" />

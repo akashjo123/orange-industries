@@ -49,7 +49,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${outfit.variable} ${spaceGrotesk.variable}`}>
-      <body className="bg-zinc-950 text-zinc-100 antialiased selection:bg-brand-orange selection:text-white font-sans">
+      <body className="bg-[#FAF7F2] text-stone-800 antialiased selection:bg-brand-orange selection:text-white font-sans">
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />

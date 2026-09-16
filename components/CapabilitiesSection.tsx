@@ -16,7 +16,7 @@ export default function CapabilitiesSection() {
   const activeCapability = capabilities.find((c) => c.id === activeId) || capabilities[0];
 
   return (
-    <section id="capabilities" className="py-24 bg-zinc-950 relative">
+    <section id="capabilities" className="py-24 bg-[#FAF7F2] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
@@ -31,14 +31,14 @@ export default function CapabilitiesSection() {
                 PRODUCTION DISCIPLINES
               </span>
             </div>
-            <h2 className="text-3xl sm:text-5xl font-extrabold text-zinc-50 tracking-tight">
+            <h2 className="text-3xl sm:text-5xl font-extrabold text-zinc-900 tracking-tight">
               Integrated production disciplines <br />
               <span className="text-brand-orange font-light">create complete outcomes</span>
             </h2>
           </div>
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 text-zinc-300 font-mono text-xs uppercase tracking-wider font-bold hover:text-brand-orange transition-colors"
+            className="inline-flex items-center gap-2 text-zinc-700 font-mono text-xs uppercase tracking-wider font-bold hover:text-brand-orange transition-colors"
           >
             <span>View All Services</span>
             <ArrowUpRight className="w-4 h-4 text-brand-orange" />
@@ -59,8 +59,8 @@ export default function CapabilitiesSection() {
                   onClick={() => router.push('/services')}
                   className={`cursor-pointer p-6 transition-all duration-300 relative rounded-xl ${
                     isActive
-                      ? "bg-zinc-900 shadow-lg"
-                      : "bg-zinc-900/60 hover:bg-zinc-900/90 shadow-sm hover:shadow-md"
+                      ? "bg-white shadow-lg"
+                      : "bg-white/60 hover:bg-white/90 shadow-sm hover:shadow-md"
                   }`}
                 >
                   {/* Left Active Accent Pill */}
@@ -84,7 +84,7 @@ export default function CapabilitiesSection() {
                       <div>
                         <h3
                           className={`text-xl font-bold transition-all ${
-                            isActive ? "text-zinc-50 translate-x-1" : "text-zinc-300"
+                            isActive ? "text-zinc-900 translate-x-1" : "text-zinc-700"
                           }`}
                         >
                           {cap.title}
@@ -121,7 +121,7 @@ export default function CapabilitiesSection() {
           </div>
 
           {/* Right Column: Visual Focal Preview (Desktop) */}
-          <div className="hidden lg:block lg:col-span-5 bg-zinc-900 p-6 relative flex-col justify-between overflow-hidden shadow-md rounded-2xl">
+          <div className="hidden lg:block lg:col-span-5 bg-white p-6 relative flex-col justify-between overflow-hidden shadow-md rounded-2xl">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeCapability.id}
@@ -141,7 +141,7 @@ export default function CapabilitiesSection() {
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </ImageReveal>
-                  <div className="absolute top-3 left-3 bg-zinc-950/90 backdrop-blur px-2.5 py-1 text-[10px] font-mono text-zinc-100 font-bold shadow-xs rounded-md z-10">
+                  <div className="absolute top-3 left-3 bg-[#FAF7F2]/90 backdrop-blur px-2.5 py-1 text-[10px] font-mono text-zinc-800 font-bold shadow-xs rounded-md z-10">
                     DISCIPLINE {activeCapability.number}
                   </div>
                 </div>
@@ -151,10 +151,10 @@ export default function CapabilitiesSection() {
                   <span className="font-mono text-xs text-brand-orange uppercase tracking-wider font-bold">
                     {activeCapability.subtitle}
                   </span>
-                  <h4 className="text-2xl font-bold text-zinc-50">
+                  <h4 className="text-2xl font-bold text-zinc-900">
                     {activeCapability.title}
                   </h4>
-                  <p className="text-sm text-zinc-400 leading-relaxed font-sans">
+                  <p className="text-sm text-zinc-600 leading-relaxed font-sans">
                     {activeCapability.description}
                   </p>
 
@@ -163,7 +163,7 @@ export default function CapabilitiesSection() {
                       INCLUDED ELEMENTS:
                     </span>
                     {activeCapability.items.map((item, idx) => (
-                      <div key={idx} className="flex items-center gap-2 text-xs text-zinc-300 font-mono">
+                      <div key={idx} className="flex items-center gap-2 text-xs text-zinc-700 font-mono">
                         <CheckCircle2 className="w-3.5 h-3.5 text-brand-orange shrink-0" />
                         <span>{item}</span>
                       </div>

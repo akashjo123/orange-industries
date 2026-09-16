@@ -22,7 +22,7 @@ export default function CapabilitiesPage() {
       />
 
       {/* Capabilities Detail Showcase */}
-      <section className="py-20 bg-zinc-950">
+      <section className="py-20 bg-[#FAF7F2]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
           {capabilities.map((cap, idx) => {
             const isEven = idx % 2 === 0;
@@ -61,20 +61,20 @@ export default function CapabilitiesPage() {
                     <span>{cap.subtitle}</span>
                   </div>
 
-                  <h2 className="text-3xl sm:text-4xl font-extrabold text-zinc-50 tracking-tight">
+                  <h2 className="text-3xl sm:text-4xl font-extrabold text-zinc-900 tracking-tight">
                     {cap.title}
                   </h2>
 
-                  <p className="text-base text-zinc-300 leading-relaxed font-sans">
+                  <p className="text-base text-zinc-700 leading-relaxed font-sans">
                     {cap.longDescription}
                   </p>
 
                   {/* Included Elements List */}
-                  <div className="bg-zinc-900 p-6 rounded-xl shadow-sm space-y-3">
+                  <div className="bg-white p-6 rounded-xl shadow-sm space-y-3">
                     <span className="font-mono text-xs text-brand-orange uppercase tracking-wider block font-bold">
                       INCLUDED PRODUCTION ELEMENTS:
                     </span>
-                    <ul className="space-y-2 text-xs text-zinc-300 font-mono">
+                    <ul className="space-y-2 text-xs text-zinc-700 font-mono">
                       {cap.items.map((item, i) => (
                         <li key={i} className="flex items-center gap-2">
                           <CheckCircle2 className="w-3.5 h-3.5 text-brand-orange shrink-0" />

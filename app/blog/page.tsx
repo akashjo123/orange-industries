@@ -20,14 +20,14 @@ export default function BlogPage() {
         description="Official publication hub for engineering whitepapers, project insights, and manufacturing content."
       />
 
-      <section className="py-20 bg-zinc-950">
+      <section className="py-20 bg-[#FAF7F2]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           {/* PDF Section 5 Official Notice */}
-          <div className="bg-zinc-900 rounded-xl shadow-sm p-8 space-y-3">
+          <div className="bg-white rounded-xl shadow-sm p-8 space-y-3">
             <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-wider block">
               DOCUMENTATION FLOW SPECIFICATION
             </span>
-            <p className="text-base font-mono text-zinc-300 leading-relaxed">
+            <p className="text-base font-mono text-zinc-700 leading-relaxed">
               {blogNote.notice}
             </p>
           </div>
@@ -36,7 +36,7 @@ export default function BlogPage() {
             {blogPosts.map((post) => (
               <article
                 key={post.slug}
-                className="bg-zinc-900 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col justify-between group shadow-md"
+                className="bg-white rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col justify-between group shadow-md"
               >
                 <div>
                   <div className="relative h-56 w-full overflow-hidden">
@@ -64,7 +64,7 @@ export default function BlogPage() {
                       </span>
                     </div>
 
-                    <h2 className="text-xl font-bold text-zinc-50 group-hover:text-brand-orange transition-colors line-clamp-2">
+                    <h2 className="text-xl font-bold text-zinc-900 group-hover:text-brand-orange transition-colors line-clamp-2">
                       <Link href={`/blog/${post.slug}`}>{post.title}</Link>
                     </h2>
 
@@ -82,7 +82,7 @@ export default function BlogPage() {
                     </span>
                     <Link
                       href={`/blog/${post.slug}`}
-                      className="text-brand-orange font-bold uppercase tracking-wider text-[11px] flex items-center gap-1 hover:text-zinc-50 transition-colors"
+                      className="text-brand-orange font-bold uppercase tracking-wider text-[11px] flex items-center gap-1 hover:text-zinc-900 transition-colors"
                     >
                       <span>Read Specification</span>
                       <ArrowUpRight className="w-3.5 h-3.5" />

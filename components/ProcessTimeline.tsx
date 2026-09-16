@@ -74,7 +74,7 @@ export default function ProcessTimeline() {
   const [activeStage, setActiveStage] = useState(0);
 
   return (
-    <section id="process" className="py-24 bg-zinc-950 relative overflow-hidden">
+    <section id="process" className="py-24 bg-[#FAF7F2] relative overflow-hidden">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -90,11 +90,11 @@ export default function ProcessTimeline() {
                 CONNECTED WORKFLOW PIPELINE
               </span>
             </div>
-            <h2 className="text-3xl sm:text-5xl font-extrabold text-zinc-50 tracking-tight">
+            <h2 className="text-3xl sm:text-5xl font-extrabold text-zinc-900 tracking-tight">
               One accountable path from <span className="text-brand-orange">brief to handover</span>
             </h2>
           </div>
-          <p className="text-base text-zinc-400 max-w-md font-mono leading-relaxed">
+          <p className="text-base text-zinc-600 max-w-md font-mono leading-relaxed">
             Drawings, samples, materials, programme, logistics and quality controls remain connected throughout the project.
           </p>
         </div>
@@ -111,10 +111,10 @@ export default function ProcessTimeline() {
                 onClick={() => setActiveStage(idx)}
                 className={`p-4 text-left transition-all duration-300 relative overflow-hidden rounded-xl ${
                   isActive
-                    ? "bg-zinc-900 text-zinc-50 shadow-lg"
+                    ? "bg-white text-zinc-900 shadow-lg"
                     : isPassed
-                    ? "bg-zinc-900/80 text-zinc-300 hover:bg-zinc-900 shadow-sm"
-                    : "bg-zinc-900/50 text-zinc-400 hover:bg-zinc-900/80"
+                    ? "bg-white/80 text-zinc-700 hover:bg-white shadow-sm"
+                    : "bg-white/50 text-zinc-400 hover:bg-white/80"
                 }`}
               >
                 {isActive && (
@@ -138,7 +138,7 @@ export default function ProcessTimeline() {
         </div>
 
         {/* Interactive Showcase Box */}
-        <div className="bg-zinc-900 p-6 sm:p-10 relative overflow-hidden shadow-md rounded-2xl">
+        <div className="bg-white p-6 sm:p-10 relative overflow-hidden shadow-md rounded-2xl">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeStage}
@@ -156,11 +156,11 @@ export default function ProcessTimeline() {
                   <span>{processStages[activeStage].label}</span>
                 </div>
 
-                <h3 className="text-3xl font-extrabold text-zinc-50">
+                <h3 className="text-3xl font-extrabold text-zinc-900">
                   {processStages[activeStage].title}
                 </h3>
 
-                <p className="text-lg text-zinc-300 font-medium">
+                <p className="text-lg text-zinc-700 font-medium">
                   {processStages[activeStage].description}
                 </p>
 
@@ -177,7 +177,7 @@ export default function ProcessTimeline() {
                     {processStages[activeStage].outputs.map((out, i) => (
                       <div
                         key={i}
-                        className="flex items-center gap-2 bg-zinc-950 p-2.5 rounded-lg text-xs text-zinc-300 font-mono shadow-xs"
+                        className="flex items-center gap-2 bg-[#FAF7F2] p-2.5 rounded-lg text-xs text-zinc-700 font-mono shadow-xs"
                       >
                         <CheckCircle2 className="w-3.5 h-3.5 text-brand-orange shrink-0" />
                         <span className="truncate">{out}</span>
@@ -191,7 +191,7 @@ export default function ProcessTimeline() {
                   <button
                     disabled={activeStage === 0}
                     onClick={() => setActiveStage((prev) => Math.max(0, prev - 1))}
-                    className="px-4 py-2 text-xs font-mono text-zinc-400 bg-zinc-950 rounded-lg disabled:opacity-40 disabled:cursor-not-allowed hover:bg-zinc-800 transition-colors"
+                    className="px-4 py-2 text-xs font-mono text-zinc-600 bg-[#FAF7F2] rounded-lg disabled:opacity-40 disabled:cursor-not-allowed hover:bg-zinc-100 transition-colors"
                   >
                     ← Previous Stage
                   </button>
@@ -216,7 +216,7 @@ export default function ProcessTimeline() {
                     className="object-cover"
                   />
                 </ImageReveal>
-                <div className="absolute bottom-4 left-4 right-4 bg-zinc-950/90 backdrop-blur p-3 rounded-xl flex items-center justify-between text-xs font-mono shadow-sm z-10">
+                <div className="absolute bottom-4 left-4 right-4 bg-[#FAF7F2]/90 backdrop-blur p-3 rounded-xl flex items-center justify-between text-xs font-mono shadow-sm z-10">
                   <span className="text-zinc-500">CONNECTED WORKFLOW:</span>
                   <span className="text-brand-orange font-bold">100% ACCOUNTABILITY</span>
                 </div>
