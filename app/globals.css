@@ -1,0 +1,108 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  :root {
+    --font-outfit: 'Outfit', sans-serif;
+    --font-mono: 'Space Grotesk', monospace;
+    --bg-cream: #FAF7F2;
+    --bg-dark: #141416;
+    --brand-orange: #FF5500;
+    --text-dark: #1C1917;
+    --text-cream: #FAF7F2;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-cream);
+    color: var(--text-dark);
+    font-family: var(--font-outfit);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--bg-cream);
+    color: #44403C;
+    overflow-x: hidden;
+    font-family: var(--font-outfit);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #FAF7F2;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #D6CEBE;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FF5500;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .bg-grid-line {
+    background-image: linear-gradient(to right, rgba(28, 25, 23, 0.05) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(28, 25, 23, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .bg-grid-line-dark {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .bg-grid-dots {
+    background-image: radial-gradient(circle, rgba(28, 25, 23, 0.08) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .bg-grid-dots-dark {
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .tech-border {
+    border: 1px solid #E7E0D3;
+  }
+
+  .tech-border-orange {
+    border: 1px solid rgba(255, 85, 0, 0.35);
+  }
+
+  .glass-nav {
+    background: rgba(250, 247, 242, 0.92);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+
+  .glass-nav-dark {
+    background: rgba(20, 20, 22, 0.92);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
