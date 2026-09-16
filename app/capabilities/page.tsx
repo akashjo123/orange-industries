@@ -44,9 +44,7 @@ export default function CapabilitiesPage() {
                     fill
                     className="object-cover"
                   />
-                  <div className="absolute top-4 left-4 bg-[#141416]/90 backdrop-blur px-3 py-1.5 rounded-md font-mono text-xs text-brand-orange font-bold shadow-sm">
-                    DISCIPLINE
-                  </div>
+
                 </div>
 
                 {/* Content */}

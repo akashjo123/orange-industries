@@ -131,9 +131,7 @@ export default function SectorsSection() {
                 fill
                 className="object-cover"
               />
-              <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-1.5 border border-[#E7E0D3] font-mono text-xs text-stone-900 font-bold">
-                COVERAGE
-              </div>
+
             </div>
 
           </motion.div>
