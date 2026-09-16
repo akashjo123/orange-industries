@@ -54,8 +54,8 @@ export default function SynapticShift({
         this.x = x;
         this.y = y;
         const angle = Math.random() * Math.PI * 2;
-        // Slower base speed
-        const velocity = (Math.random() * 0.3 + 0.1) * actualSpeed;
+        // Increase base velocity so it's noticeably moving even at speed 0.35
+        const velocity = (Math.random() * 1.5 + 0.5) * actualSpeed;
         this.vx = Math.cos(angle) * velocity;
         this.vy = Math.sin(angle) * velocity;
         this.size = (Math.random() * 1.5 + 0.8) * scale;
@@ -74,7 +74,7 @@ export default function SynapticShift({
         if (this.y > height + 100) this.vy *= -1;
 
         if (breathing && !prefersReducedMotion) {
-           this.phase += 0.015 * actualSpeed;
+           this.phase += 0.04 * actualSpeed; // Faster breathing
         }
       }
 
@@ -135,8 +135,8 @@ export default function SynapticShift({
       time += 0.01 * actualSpeed;
       ctx.clearRect(0, 0, width, height);
 
-      // Connection distance based on scale and falloff
-      const maxDistance = 160 * scale * falloff;
+      // Connection distance based on scale and falloff (increased base for better high-res visibility)
+      const maxDistance = 250 * scale * falloff;
 
       // Update and draw connections
       for (let i = 0; i < particles.length; i++) {
@@ -149,7 +149,8 @@ export default function SynapticShift({
             // Non-linear falloff for more organic look
             const distanceRatio = distance / maxDistance;
             const falloffFactor = Math.pow(1 - distanceRatio, 2);
-            const opacity = falloffFactor * 0.6 * intensity;
+            // Increased base opacity of connections
+            const opacity = falloffFactor * 0.8 * intensity;
             
             const lineAlpha = breathing && !prefersReducedMotion
                 ? opacity * (0.8 + Math.sin(time + particles[i].phase) * 0.2)
@@ -159,7 +160,8 @@ export default function SynapticShift({
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
             ctx.strokeStyle = `rgba(${rgbColor.r}, ${rgbColor.g}, ${rgbColor.b}, ${Math.max(0, lineAlpha)})`;
-            ctx.lineWidth = 1 * scale;
+            // Thicker lines for visibility
+            ctx.lineWidth = 1.5 * scale;
             ctx.stroke();
           }
         }
