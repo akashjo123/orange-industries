@@ -213,10 +213,7 @@ export default function ProcessTimeline() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute bottom-4 left-4 right-4 bg-[#FAF7F2]/90 backdrop-blur p-3 rounded-xl flex items-center justify-between text-xs font-mono shadow-sm">
-                  <span className="text-zinc-500">CONNECTED WORKFLOW:</span>
-                  <span className="text-brand-orange font-bold">100% ACCOUNTABILITY</span>
-                </div>
+
               </div>
             </motion.div>
           </AnimatePresence>
