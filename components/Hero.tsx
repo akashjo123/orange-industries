@@ -70,7 +70,7 @@ export default function Hero() {
           >
             <Link
               href="/contact"
-              className="inline-flex items-center gap-3 bg-brand-orange hover:bg-zinc-900 text-white px-8 py-4 text-xs font-mono font-bold uppercase tracking-wider transition-all duration-200 shadow-xl rounded-lg"
+              className="inline-flex items-center gap-3 bg-brand-orange/15 border border-brand-orange/20 hover:bg-brand-orange text-brand-orange hover:text-white px-8 py-4 text-xs font-mono font-bold uppercase tracking-wider transition-all duration-200 rounded-lg"
             >
               <span>Start a Project</span>
               <ArrowUpRight className="w-4 h-4" />
