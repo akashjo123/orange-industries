@@ -84,7 +84,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-brand-orange hover:bg-zinc-800 hover:text-white text-white px-5 py-2.5 text-xs font-mono font-bold uppercase tracking-wider transition-all duration-200 shadow-md"
+              className="inline-flex items-center gap-2 bg-brand-orange hover:bg-white hover:text-zinc-950 text-white px-5 py-2.5 text-xs font-mono font-bold uppercase tracking-wider transition-all duration-200 shadow-md"
             >
               <span>Start a Project</span>
               <ArrowUpRight className="w-4 h-4" />

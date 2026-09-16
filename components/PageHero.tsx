@@ -14,7 +14,7 @@ export default function PageHero({
   description,
 }: PageHeroProps) {
   return (
-    <section className="pt-36 pb-20 bg-zinc-950 relative overflow-hidden">
+    <section className="pt-36 pb-20 bg-[#FAF7F2] relative overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-25 pointer-events-none" />
 
@@ -24,11 +24,11 @@ export default function PageHero({
             <span>{eyebrow}</span>
           </div>
 
-          <h1 className="text-4xl sm:text-6xl font-extrabold text-zinc-50 tracking-tight leading-[1.08]">
+          <h1 className="text-4xl sm:text-6xl font-extrabold text-zinc-900 tracking-tight leading-[1.08]">
             {title}
           </h1>
 
-          <p className="text-lg text-zinc-400 font-normal leading-relaxed">
+          <p className="text-lg text-zinc-600 font-normal leading-relaxed">
             {description}
           </p>
         </div>

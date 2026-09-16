@@ -37,7 +37,7 @@ export default function ProjectFilterGrid() {
               className={`px-5 py-2.5 text-xs font-mono font-bold uppercase tracking-wider rounded-lg transition-all duration-200 ${
                 isActive
                   ? "bg-brand-orange text-white shadow-md"
-                  : "bg-zinc-900 text-zinc-400 hover:bg-zinc-800 hover:text-zinc-50 shadow-sm"
+                  : "bg-white text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900 shadow-sm"
               }`}
             >
               {cat.label}
@@ -60,7 +60,7 @@ export default function ProjectFilterGrid() {
             >
               <Link
                 href={`/portfolio/${project.slug}`}
-                className="group block bg-zinc-900 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 relative h-full flex flex-col justify-between shadow-md"
+                className="group block bg-white rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 relative h-full flex flex-col justify-between shadow-md"
               >
                 <div>
                   <div className="relative h-64 w-full overflow-hidden">
@@ -73,21 +73,21 @@ export default function ProjectFilterGrid() {
                       />
                     </ImageReveal>
 
-                    <div className="absolute top-4 left-4 bg-zinc-900/90 backdrop-blur px-3 py-1.5 text-[11px] font-mono text-brand-orange font-bold uppercase rounded-md shadow-sm">
+                    <div className="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1.5 text-[11px] font-mono text-brand-orange font-bold uppercase rounded-md shadow-sm">
                       {project.client}
                     </div>
 
-                    <div className="absolute top-4 right-4 w-9 h-9 bg-zinc-900/90 backdrop-blur rounded-full flex items-center justify-center text-zinc-50 group-hover:bg-brand-orange group-hover:text-white transition-all duration-300 shadow-sm">
+                    <div className="absolute top-4 right-4 w-9 h-9 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-zinc-900 group-hover:bg-brand-orange group-hover:text-white transition-all duration-300 shadow-sm">
                       <ArrowUpRight className="w-4 h-4" />
                     </div>
                   </div>
 
                   <div className="p-6 space-y-4">
-                    <h3 className="text-xl font-extrabold text-zinc-50 group-hover:text-brand-orange transition-colors">
+                    <h3 className="text-xl font-extrabold text-zinc-900 group-hover:text-brand-orange transition-colors">
                       {project.title}
                     </h3>
 
-                    <p className="text-sm text-zinc-400 font-mono line-clamp-2 leading-relaxed">
+                    <p className="text-sm text-zinc-600 font-mono line-clamp-2 leading-relaxed">
                       {project.summary}
                     </p>
 
@@ -96,7 +96,7 @@ export default function ProjectFilterGrid() {
                         ORANGE INDUSTRIES SCOPE:
                       </span>
                       {project.scopeList.map((item, i) => (
-                        <div key={i} className="flex items-center gap-1.5 text-xs font-mono text-zinc-400">
+                        <div key={i} className="flex items-center gap-1.5 text-xs font-mono text-zinc-600">
                           <CheckCircle2 className="w-3 h-3 text-brand-orange shrink-0" />
                           <span className="truncate">{item}</span>
                         </div>
@@ -121,7 +121,7 @@ export default function ProjectFilterGrid() {
       </motion.div>
 
       {/* PDF 4.7 SELECTED PORTFOLIO LIST */}
-      <div className="bg-zinc-900 rounded-xl p-8 space-y-6 shadow-md">
+      <div className="bg-white rounded-xl p-8 space-y-6 shadow-md">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-2 gap-4">
           <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-wider">
             ADDITIONAL SELECTED PORTFOLIO PROJECTS
@@ -133,7 +133,7 @@ export default function ProjectFilterGrid() {
           {selectedPortfolioItems.map((item, idx) => (
             <div
               key={idx}
-              className="bg-zinc-950 p-4 rounded-lg text-center font-mono text-xs font-bold text-zinc-300 hover:text-brand-orange transition-colors shadow-xs"
+              className="bg-[#FAF7F2] p-4 rounded-lg text-center font-mono text-xs font-bold text-zinc-700 hover:text-brand-orange transition-colors shadow-xs"
             >
               {item}
             </div>
