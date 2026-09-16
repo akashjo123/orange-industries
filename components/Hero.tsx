@@ -20,9 +20,9 @@ export default function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   return (
-    <section ref={ref} className="relative min-h-screen flex flex-col justify-center pt-32 pb-24 overflow-hidden bg-[#FAF7F2] border-b border-[#E7E0D3]">
+    <section ref={ref} className="relative min-h-screen flex flex-col justify-center pt-32 pb-24 overflow-hidden bg-zinc-950 border-b border-zinc-800">
       {/* Background Animation Container */}
-      <motion.div style={{ y: backgroundY }} className="absolute inset-0 z-0 h-[120%] -top-[10%] bg-[#F4F3F0]">
+      <motion.div style={{ y: backgroundY }} className="absolute inset-0 z-0 h-[120%] -top-[10%] bg-zinc-950">
         <SynapticShift 
           speed={0.35} 
           scale={0.55} 
@@ -33,7 +33,7 @@ export default function Hero() {
           breathing={true} 
         />
         {/* Gradient only on the left side to keep text readable without washing out the animation */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#FAF7F2] via-[#FAF7F2]/85 to-transparent w-full lg:w-[65%]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/85 to-transparent w-full lg:w-[65%]" />
       </motion.div>
 
       {/* Main Hero Content */}
@@ -45,7 +45,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-zinc-900 tracking-tight leading-[1.08]"
+            className="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-zinc-50 tracking-tight leading-[1.08]"
           >
             Manufacturing environments. <br />
             <span className="text-brand-orange font-light">Delivering experiences.</span>
@@ -56,7 +56,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-lg sm:text-2xl text-zinc-600 max-w-3xl font-normal leading-relaxed"
+            className="text-lg sm:text-2xl text-zinc-400 max-w-3xl font-normal leading-relaxed"
           >
             {companyData.heroSubheadline}
           </motion.p>
@@ -77,7 +77,7 @@ export default function Hero() {
             </Link>
             <Link
               href="/services"
-              className="inline-flex items-center gap-3 bg-white hover:bg-zinc-100 text-zinc-800 px-8 py-4 text-xs font-mono font-bold uppercase tracking-wider shadow-sm transition-all duration-200 rounded-lg"
+              className="inline-flex items-center gap-3 bg-zinc-900 hover:bg-zinc-800 text-zinc-100 px-8 py-4 text-xs font-mono font-bold uppercase tracking-wider shadow-sm transition-all duration-200 rounded-lg"
             >
               <span>Explore Services</span>
             </Link>

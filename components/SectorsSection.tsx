@@ -14,7 +14,7 @@ export default function SectorsSection() {
   const currentSector = sectors.find((s) => s.id === activeSectorId) || sectors[0];
 
   return (
-    <section id="sectors" className="py-24 bg-[#FAF7F2] relative overflow-hidden">
+    <section id="sectors" className="py-24 bg-zinc-950 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Clean Normal Sub Heading */}
@@ -22,13 +22,13 @@ export default function SectorsSection() {
           <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-widest">
             MARKETS & SECTORS
           </span>
-          <span className="text-stone-400">•</span>
-          <span className="font-mono text-xs text-stone-500 uppercase tracking-widest font-semibold">
+          <span className="text-zinc-600">•</span>
+          <span className="font-mono text-xs text-zinc-500 uppercase tracking-widest font-semibold">
             FOCUSED MARKET STRENGTHS
           </span>
         </div>
 
-        <h2 className="text-3xl sm:text-5xl font-extrabold text-stone-900 tracking-tight mb-12">
+        <h2 className="text-3xl sm:text-5xl font-extrabold text-zinc-50 tracking-tight mb-12">
           Three core strengths serve a <span className="text-brand-orange font-light">focused set of sectors</span>
         </h2>
 
@@ -43,7 +43,7 @@ export default function SectorsSection() {
                 className={`px-5 py-3 text-xs font-mono font-bold uppercase tracking-wider transition-all duration-200 rounded-sm ${
                   isActive
                     ? "bg-stone-900 text-white shadow-md"
-                    : "bg-white text-stone-700 shadow-xs hover:bg-stone-100 hover:text-stone-900"
+                    : "bg-zinc-900 text-zinc-300 shadow-xs hover:bg-zinc-800 hover:text-zinc-50"
                 }`}
               >
                 {sector.title}
@@ -60,7 +60,7 @@ export default function SectorsSection() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -15 }}
             transition={{ duration: 0.3 }}
-            className="bg-white p-8 sm:p-12 relative overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-12 items-center shadow-sm rounded-sm"
+            className="bg-zinc-900 p-8 sm:p-12 relative overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-12 items-center shadow-sm rounded-sm"
           >
             {/* Background number watermark */}
             <div className="absolute top-4 right-8 font-mono text-8xl font-black text-stone-200/60 pointer-events-none select-none">
@@ -73,24 +73,24 @@ export default function SectorsSection() {
                 {currentSector.kicker}
               </span>
 
-              <h3 className="text-2xl sm:text-4xl font-extrabold text-stone-900">
+              <h3 className="text-2xl sm:text-4xl font-extrabold text-zinc-50">
                 {currentSector.title}
               </h3>
 
-              <p className="text-lg text-stone-600 leading-relaxed font-normal">
+              <p className="text-lg text-zinc-400 leading-relaxed font-normal">
                 {currentSector.description}
               </p>
 
               {/* Target Clients */}
-              <div className="pt-4 border-t border-[#E7E0D3] space-y-3">
-                <span className="font-mono text-xs text-stone-500 uppercase tracking-widest block font-semibold">
+              <div className="pt-4 border-t border-zinc-800 space-y-3">
+                <span className="font-mono text-xs text-zinc-500 uppercase tracking-widest block font-semibold">
                   TARGET CLIENT CATEGORIES:
                 </span>
                 <div className="flex flex-wrap gap-2">
                   {currentSector.targetClients.map((client, idx) => (
                     <span
                       key={idx}
-                      className="bg-[#F1ECE1] text-stone-800 px-3 py-1 text-xs font-mono border border-[#E7E0D3]"
+                      className="bg-zinc-800 text-zinc-100 px-3 py-1 text-xs font-mono border border-zinc-800"
                     >
                       {client}
                     </span>
@@ -100,12 +100,12 @@ export default function SectorsSection() {
 
               {/* Capabilities Delivered */}
               <div className="pt-2 space-y-2">
-                <span className="font-mono text-xs text-stone-500 uppercase tracking-widest block font-semibold">
+                <span className="font-mono text-xs text-zinc-500 uppercase tracking-widest block font-semibold">
                   DELIVERY STRENGTHS:
                 </span>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                   {currentSector.capabilitiesProvided.map((cap, idx) => (
-                    <div key={idx} className="flex items-center gap-2 text-xs text-stone-800 font-mono">
+                    <div key={idx} className="flex items-center gap-2 text-xs text-zinc-100 font-mono">
                       <CheckCircle2 className="w-3.5 h-3.5 text-brand-orange shrink-0" />
                       <span>{cap}</span>
                     </div>
@@ -125,7 +125,7 @@ export default function SectorsSection() {
             </div>
 
             {/* Right Image */}
-            <div className="lg:col-span-5 relative h-80 sm:h-96 border border-[#E7E0D3] overflow-hidden relative z-10">
+            <div className="lg:col-span-5 relative h-80 sm:h-96 border border-zinc-800 overflow-hidden relative z-10">
               <ImageReveal direction="down" delay={0.1}>
                 <Image
                   src={currentSector.image}
@@ -134,7 +134,7 @@ export default function SectorsSection() {
                   className="object-cover"
                 />
               </ImageReveal>
-              <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-1.5 border border-[#E7E0D3] font-mono text-xs text-stone-900 font-bold z-10">
+              <div className="absolute bottom-4 left-4 bg-zinc-900/90 backdrop-blur px-3 py-1.5 border border-zinc-800 font-mono text-xs text-zinc-50 font-bold z-10">
                 COVERAGE
               </div>
             </div>

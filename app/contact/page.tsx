@@ -19,13 +19,13 @@ export default function ContactPage() {
         description="Share your concept, drawings, BOQ or site requirements. Our engineering team will assess manufacturing methods, material selection, and installation schedules."
       />
 
-      <section className="py-20 bg-[#FAF7F2]">
+      <section className="py-20 bg-zinc-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
             
             {/* Left Column: Direct Contacts & Operational Hubs */}
             <div className="lg:col-span-4 space-y-8">
-              <div className="bg-white rounded-2xl shadow-sm p-8 space-y-6">
+              <div className="bg-zinc-900 rounded-2xl shadow-sm p-8 space-y-6">
                 <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-widest block">
                   DIRECT COMMUNICATIONS
                 </span>
@@ -35,7 +35,7 @@ export default function ContactPage() {
                     <span className="text-zinc-400 block text-[10px] uppercase">PROJECT ENQUIRIES</span>
                     <a
                       href={`mailto:${companyData.email}`}
-                      className="text-zinc-900 font-bold text-sm hover:text-brand-orange transition-colors flex items-center gap-2"
+                      className="text-zinc-50 font-bold text-sm hover:text-brand-orange transition-colors flex items-center gap-2"
                     >
                       <Mail className="w-4 h-4 text-brand-orange" />
                       <span>{companyData.email}</span>
@@ -48,7 +48,7 @@ export default function ContactPage() {
                       href={companyData.website}
                       target="_blank"
                       rel="noreferrer"
-                      className="text-zinc-600 hover:text-zinc-900 transition-colors flex items-center gap-2"
+                      className="text-zinc-400 hover:text-zinc-50 transition-colors flex items-center gap-2"
                     >
                       <Globe className="w-4 h-4 text-zinc-400" />
                       <span>{companyData.website.replace("https://", "")}</span>
@@ -57,7 +57,7 @@ export default function ContactPage() {
 
                   <div className="space-y-1 pt-3">
                     <span className="text-zinc-400 block text-[10px] uppercase">RESPONSE TIMELINE</span>
-                    <div className="flex items-center gap-2 text-zinc-700">
+                    <div className="flex items-center gap-2 text-zinc-300">
                       <Clock className="w-4 h-4 text-brand-orange" />
                       <span>Within 1 Business Day</span>
                     </div>
@@ -66,14 +66,14 @@ export default function ContactPage() {
               </div>
 
               {/* Regional Locations */}
-              <div className="bg-white rounded-2xl shadow-sm p-8 space-y-6">
+              <div className="bg-zinc-900 rounded-2xl shadow-sm p-8 space-y-6">
                 <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-widest block">
                   REGIONAL OPERATIONAL BASES
                 </span>
 
                 <div className="space-y-6 text-xs font-mono">
                   <div className="space-y-2">
-                    <div className="flex items-center gap-2 text-zinc-900 font-bold text-sm">
+                    <div className="flex items-center gap-2 text-zinc-50 font-bold text-sm">
                       <MapPin className="w-4 h-4 text-brand-orange" />
                       <span>KINGDOM OF BAHRAIN</span>
                     </div>
@@ -83,7 +83,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="space-y-2 pt-4">
-                    <div className="flex items-center gap-2 text-zinc-900 font-bold text-sm">
+                    <div className="flex items-center gap-2 text-zinc-50 font-bold text-sm">
                       <ShieldCheck className="w-4 h-4 text-brand-orange" />
                       <span>KINGDOM OF SAUDI ARABIA</span>
                     </div>

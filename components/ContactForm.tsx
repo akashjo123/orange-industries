@@ -106,7 +106,7 @@ export default function ContactForm() {
                 });
                 setFiles([]);
               }}
-              className="inline-flex items-center gap-2 bg-white text-zinc-950 hover:bg-zinc-200 px-6 py-3 text-xs font-mono font-bold uppercase tracking-wider transition-colors shadow-sm"
+              className="inline-flex items-center gap-2 bg-zinc-900 text-zinc-950 hover:bg-zinc-200 px-6 py-3 text-xs font-mono font-bold uppercase tracking-wider transition-colors shadow-sm"
             >
               <span>Submit Another Project Brief</span>
               <ArrowUpRight className="w-4 h-4 text-brand-orange" />
@@ -262,7 +262,7 @@ export default function ContactForm() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full flex items-center justify-center gap-3 bg-white text-zinc-950 hover:bg-zinc-200 py-4 text-xs font-mono font-bold uppercase tracking-wider transition-all duration-200 shadow-md disabled:opacity-50"
+              className="w-full flex items-center justify-center gap-3 bg-zinc-900 text-zinc-950 hover:bg-zinc-200 py-4 text-xs font-mono font-bold uppercase tracking-wider transition-all duration-200 shadow-md disabled:opacity-50"
             >
               <span>{isSubmitting ? "Processing Enquiry..." : "Submit Project Enquiry"}</span>
               <ArrowUpRight className="w-4 h-4 text-brand-orange" />
