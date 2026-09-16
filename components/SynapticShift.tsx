@@ -199,8 +199,8 @@ export default function SynapticShift({
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 w-full h-full pointer-events-none mix-blend-screen"
-      style={{ opacity: 0.4 }} 
+      className="absolute inset-0 w-full h-full pointer-events-none"
+      style={{ opacity: 0.9 }} 
     />
   );
 }

@@ -26,7 +26,7 @@ export default function Hero() {
         <SynapticShift 
           speed={0.35} 
           scale={0.55} 
-          intensity={0.7} 
+          intensity={1.5} 
           color="#FF5A00" 
           falloff={1.15} 
           complexity={10} 
