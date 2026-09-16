@@ -35,23 +35,6 @@ export default function SynapticShift({
     let particles: Particle[] = [];
     let time = 0;
 
-    let mouseX = -1000;
-    let mouseY = -1000;
-
-    const handleMouseMove = (e: MouseEvent) => {
-      const rect = canvas.getBoundingClientRect();
-      mouseX = e.clientX - rect.left;
-      mouseY = e.clientY - rect.top;
-    };
-
-    const handleMouseLeave = () => {
-      mouseX = -1000;
-      mouseY = -1000;
-    };
-
-    canvas.addEventListener("mousemove", handleMouseMove);
-    canvas.addEventListener("mouseleave", handleMouseLeave);
-
     const rgbColor = hexToRgb(color);
     
     // Check for reduced motion preference
@@ -93,20 +76,6 @@ export default function SynapticShift({
         if (breathing && !prefersReducedMotion) {
            this.phase += 0.04 * actualSpeed; // Faster breathing
         }
-
-        // Mouse interaction: subtly pull towards mouse
-        const dx = mouseX - this.x;
-        const dy = mouseY - this.y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < 200) {
-          const pull = (200 - dist) / 200 * 0.05 * actualSpeed;
-          this.vx += dx * pull * 0.01;
-          this.vy += dy * pull * 0.01;
-        }
-        
-        // Add some friction to prevent infinite acceleration from mouse pull
-        this.vx *= 0.99;
-        this.vy *= 0.99;
       }
 
       draw() {
@@ -196,21 +165,6 @@ export default function SynapticShift({
             ctx.stroke();
           }
         }
-        
-        // Draw line to mouse
-        const distToMouse = Math.sqrt(Math.pow(particles[i].x - mouseX, 2) + Math.pow(particles[i].y - mouseY, 2));
-        if (distToMouse < maxDistance * 1.5) {
-          const distanceRatio = distToMouse / (maxDistance * 1.5);
-          const falloffFactor = Math.pow(1 - distanceRatio, 2);
-          const opacity = falloffFactor * 0.8 * intensity;
-          
-          ctx.beginPath();
-          ctx.moveTo(particles[i].x, particles[i].y);
-          ctx.lineTo(mouseX, mouseY);
-          ctx.strokeStyle = `rgba(${rgbColor.r}, ${rgbColor.g}, ${rgbColor.b}, ${Math.max(0, opacity)})`;
-          ctx.lineWidth = 2 * scale;
-          ctx.stroke();
-        }
       }
 
       // Draw dots
@@ -237,8 +191,6 @@ export default function SynapticShift({
 
     return () => {
       window.removeEventListener("resize", handleResize);
-      canvas.removeEventListener("mousemove", handleMouseMove);
-      canvas.removeEventListener("mouseleave", handleMouseLeave);
       clearTimeout(resizeTimeout);
       cancelAnimationFrame(animationFrameId);
     };
@@ -247,7 +199,7 @@ export default function SynapticShift({
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 w-full h-full pointer-events-auto"
+      className="absolute inset-0 w-full h-full pointer-events-none"
       style={{ opacity: 0.9 }} 
     />
   );
