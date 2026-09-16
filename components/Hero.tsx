@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import SynapticShift from "./SynapticShift";
 import { ArrowUpRight } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { companyData } from "@/data/company";
@@ -20,17 +21,19 @@ export default function Hero() {
 
   return (
     <section ref={ref} className="relative min-h-screen flex flex-col justify-center pt-32 pb-24 overflow-hidden bg-[#FAF7F2] border-b border-[#E7E0D3]">
-      {/* Background Image Container */}
-      <motion.div style={{ y: backgroundY }} className="absolute inset-0 z-0 h-[120%] -top-[10%]">
-        <Image
-          src="/images/hero_enhanced_banner.jpg"
-          alt="Premium Architectural Manufacturing Environment"
-          fill
-          priority
-          className="object-cover"
+      {/* Background Animation Container */}
+      <motion.div style={{ y: backgroundY }} className="absolute inset-0 z-0 h-[120%] -top-[10%] bg-[#F4F3F0]">
+        <SynapticShift 
+          speed={0.35} 
+          scale={0.55} 
+          intensity={1.5} 
+          color="#FF5A00" 
+          falloff={1.15} 
+          complexity={10} 
+          breathing={true} 
         />
-        {/* Gradient only on the left side to keep text readable without washing out the image */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#FAF7F2] via-[#FAF7F2]/80 to-transparent w-full lg:w-[65%]" />
+        {/* Gradient only on the left side to keep text readable without washing out the animation */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#FAF7F2] via-[#FAF7F2]/85 to-transparent w-full lg:w-[65%]" />
       </motion.div>
 
       {/* Main Hero Content */}
