@@ -22,38 +22,44 @@ export default function CompanyIntro() {
         </div>
 
         {/* 2-Column Editorial Grid (PDF 1.2) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start pb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center pb-16 relative">
           
+          {/* Subtle Decorative element */}
+          <div className="absolute top-0 left-0 w-24 h-px bg-brand-orange/30" />
+
           {/* Left Column: Source PDF Headline */}
-          <div className="lg:col-span-6">
+          <div className="lg:col-span-6 space-y-8">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-stone-900 leading-[1.15] tracking-tight"
+              className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-stone-900 leading-[1.1] tracking-tight"
             >
-              A single accountable <span className="text-brand-orange font-light">manufacturing partner</span>
+              A single accountable <br className="hidden sm:block" />
+              <span className="text-brand-orange font-light">manufacturing partner</span>
             </motion.h2>
 
-            <div className="flex flex-wrap items-center gap-3 text-xs font-mono pt-6">
-              <span className="bg-white text-stone-800 px-3.5 py-1.5 font-bold shadow-xs">
+            <div className="flex flex-wrap items-center gap-3 text-xs font-mono">
+              <span className="bg-white border border-stone-200 text-stone-800 px-4 py-2 rounded-full font-bold shadow-sm flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-orange animate-pulse" />
                 {companyData.hubs.bahrain}
               </span>
-              <span className="bg-white text-stone-800 px-3.5 py-1.5 font-bold shadow-xs">
+              <span className="bg-white border border-stone-200 text-stone-800 px-4 py-2 rounded-full font-bold shadow-sm flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-stone-300" />
                 {companyData.hubs.gcc}
               </span>
             </div>
           </div>
 
           {/* Right Column: Source PDF Copy */}
-          <div className="lg:col-span-6 space-y-6">
+          <div className="lg:col-span-6 space-y-8 lg:pl-8 border-l-0 lg:border-l border-stone-200">
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-stone-700 text-lg leading-relaxed"
+              className="text-stone-700 text-lg sm:text-xl leading-relaxed font-medium"
             >
               {companyData.description}
             </motion.p>
@@ -66,10 +72,10 @@ export default function CompanyIntro() {
             >
               <Link
                 href="/company"
-                className="inline-flex items-center gap-2 text-stone-900 font-mono text-xs uppercase tracking-wider hover:text-brand-orange transition-colors group font-bold"
+                className="inline-flex items-center gap-3 bg-brand-orange text-white px-8 py-4 rounded-xl font-mono text-xs uppercase tracking-wider hover:bg-stone-900 transition-all shadow-md hover:shadow-lg group font-bold"
               >
                 <span>Read Full Company Overview</span>
-                <ArrowUpRight className="w-4 h-4 text-brand-orange group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </Link>
             </motion.div>
           </div>
