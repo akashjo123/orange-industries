@@ -14,5 +14,13 @@
     "utils": "@/lib/utils",
     "ui": "@/components/ui"
   },
-  "registries": { "@reactbits-starter": "https://pro.reactbits.dev/r/@reactbits-starter/{name}.json" }
+  "registries": [
+    {
+      "name": "@reactbits-starter",
+      "url": "https://pro.reactbits.dev/r",
+      "headers": {
+        "Authorization": "Bearer ${REACTBITS_LICENSE_KEY}"
+      }
+    }
+  ]
 }
