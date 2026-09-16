@@ -67,7 +67,7 @@ export default function ProjectFilterGrid() {
                       src={project.image}
                       alt={project.title}
                       fill
-                      className="object-cover filter grayscale contrast-125 brightness-95 group-hover:scale-105 group-hover:filter-none transition-all duration-700"
+                      className="object-cover group-hover:scale-105 transition-all duration-700"
                     />
 
                     <div className="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1.5 text-[11px] font-mono text-brand-orange font-bold uppercase rounded-md shadow-sm">

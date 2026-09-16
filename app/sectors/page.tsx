@@ -94,7 +94,7 @@ export default function SectorsPage() {
                     src={sector.image}
                     alt={sector.title}
                     fill
-                    className="object-cover filter grayscale contrast-125 brightness-95"
+                    className="object-cover"
                   />
                 </div>
               </div>

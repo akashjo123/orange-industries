@@ -211,7 +211,7 @@ export default function ProcessTimeline() {
                   src={processStages[activeStage].image}
                   alt={processStages[activeStage].title}
                   fill
-                  className="object-cover filter grayscale contrast-125 brightness-95"
+                  className="object-cover"
                 />
                 <div className="absolute bottom-4 left-4 right-4 bg-[#FAF7F2]/90 backdrop-blur p-3 rounded-xl flex items-center justify-between text-xs font-mono shadow-sm">
                   <span className="text-zinc-500">CONNECTED WORKFLOW:</span>

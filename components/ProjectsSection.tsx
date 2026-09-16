@@ -61,7 +61,7 @@ export default function ProjectsSection() {
                       src={project.image}
                       alt={project.title}
                       fill
-                      className="object-cover filter grayscale contrast-125 brightness-95 group-hover:scale-105 group-hover:filter-none transition-all duration-700"
+                      className="object-cover group-hover:scale-105 transition-all duration-700"
                     />
 
                     {/* Top Badge */}

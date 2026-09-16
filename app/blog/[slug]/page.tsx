@@ -74,7 +74,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               alt={post.title}
               fill
               priority
-              className="object-cover filter grayscale contrast-125 brightness-95"
+              className="object-cover"
             />
           </div>
         </div>
