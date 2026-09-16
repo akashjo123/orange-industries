@@ -34,7 +34,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
   return (
     <>
       {/* Top Header */}
-      <section className="pt-32 pb-16 bg-[#F8FAFC] border-b border-slate-200 relative overflow-hidden">
+      <section className="pt-32 pb-16 bg-[#F8FAFC] border-b border-zinc-800 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="space-y-6">
             <Link
@@ -49,7 +49,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
               <span className="bg-brand-orange text-black font-bold px-3 py-1 uppercase">
                 {project.client}
               </span>
-              <span className="bg-white border border-slate-200 text-slate-700 px-3 py-1 uppercase font-semibold">
+              <span className="bg-zinc-900 border border-zinc-800 text-slate-700 px-3 py-1 uppercase font-semibold">
                 FLAGSHIP CASE STUDY
               </span>
             </div>
@@ -62,9 +62,9 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
       </section>
 
       {/* Main Cover Image */}
-      <section className="bg-white border-b border-slate-200 py-12">
+      <section className="bg-zinc-900 border-b border-zinc-800 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative h-96 sm:h-[480px] w-full border border-slate-200 overflow-hidden shadow-sm">
+          <div className="relative h-96 sm:h-[480px] w-full border border-zinc-800 overflow-hidden shadow-sm">
             <Image
               src={project.image}
               alt={project.title}
@@ -76,14 +76,14 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
       </section>
 
       {/* Case Study Details from PDF */}
-      <section className="py-20 bg-[#F8FAFC] border-b border-slate-200">
+      <section className="py-20 bg-[#F8FAFC] border-b border-zinc-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
             
             {/* Left Narrative */}
             <div className="lg:col-span-8 space-y-8">
               {/* Client Challenge */}
-              <div className="space-y-3 bg-white p-8 border border-slate-200 shadow-xs">
+              <div className="space-y-3 bg-zinc-900 p-8 border border-zinc-800 shadow-xs">
                 <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-widest block">
                   CLIENT CHALLENGE
                 </span>
@@ -93,7 +93,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
               </div>
 
               {/* Orange Industries Scope */}
-              <div className="space-y-4 bg-white p-8 border border-slate-200 shadow-xs">
+              <div className="space-y-4 bg-zinc-900 p-8 border border-zinc-800 shadow-xs">
                 <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-widest block">
                   ORANGE INDUSTRIES SCOPE
                 </span>
@@ -110,8 +110,8 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
 
             {/* Right Sidebar Action */}
             <div className="lg:col-span-4 space-y-8">
-              <div className="bg-white border border-slate-200 p-6 space-y-6 shadow-sm">
-                <div className="flex items-center justify-between border-b border-slate-200 pb-4">
+              <div className="bg-zinc-900 border border-zinc-800 p-6 space-y-6 shadow-sm">
+                <div className="flex items-center justify-between border-b border-zinc-800 pb-4">
                   <span className="font-mono text-xs text-brand-orange uppercase tracking-widest font-bold">
                     CONNECTED EXECUTION
                   </span>

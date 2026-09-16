@@ -20,11 +20,11 @@ export default function Footer() {
               Integrated GCC engineering, architectural fabrication, branded environments, landmark signage, and custom project manufacturing. One accountable delivery partner from brief to installation.
             </p>
             <div className="flex items-center gap-4 text-xs font-mono text-slate-400">
-              <span className="flex items-center gap-1.5 bg-white/5 px-3 py-1.5 rounded-md">
+              <span className="flex items-center gap-1.5 bg-zinc-900/5 px-3 py-1.5 rounded-md">
                 <MapPin className="w-3.5 h-3.5 text-brand-orange" />
                 Bahrain Base
               </span>
-              <span className="flex items-center gap-1.5 bg-white/5 px-3 py-1.5 rounded-md">
+              <span className="flex items-center gap-1.5 bg-zinc-900/5 px-3 py-1.5 rounded-md">
                 <ShieldCheck className="w-3.5 h-3.5 text-brand-orange" />
                 Saudi Project Delivery
               </span>
@@ -86,7 +86,7 @@ export default function Footer() {
               <div className="pt-2">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 bg-brand-orange text-black hover:bg-white px-4 py-2 text-xs font-mono font-bold uppercase tracking-wider transition-all"
+                  className="inline-flex items-center gap-2 bg-brand-orange text-black hover:bg-zinc-900 px-4 py-2 text-xs font-mono font-bold uppercase tracking-wider transition-all"
                 >
                   <span>Project Enquiry</span>
                   <ArrowUpRight className="w-3.5 h-3.5" />

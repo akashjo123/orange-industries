@@ -33,7 +33,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   return (
     <>
-      <section className="pt-32 pb-16 bg-[#F8FAFC] border-b border-slate-200 relative overflow-hidden">
+      <section className="pt-32 pb-16 bg-[#F8FAFC] border-b border-zinc-800 relative overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-6">
           <Link
             href="/blog"
@@ -66,9 +66,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       </section>
 
       {/* Main Image */}
-      <section className="bg-white border-b border-slate-200 py-12">
+      <section className="bg-zinc-900 border-b border-zinc-800 py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative h-96 sm:h-[450px] w-full border border-slate-200 overflow-hidden shadow-sm">
+          <div className="relative h-96 sm:h-[450px] w-full border border-zinc-800 overflow-hidden shadow-sm">
             <Image
               src={post.image}
               alt={post.title}
@@ -81,7 +81,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       </section>
 
       {/* Article Content */}
-      <section className="py-20 bg-white border-b border-slate-200">
+      <section className="py-20 bg-zinc-900 border-b border-zinc-800">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 font-sans">
           <p className="text-lg text-slate-800 font-medium leading-relaxed border-l-2 border-brand-orange pl-4 italic">
             "{post.excerpt}"
@@ -93,7 +93,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             ))}
           </div>
 
-          <div className="pt-8 border-t border-slate-200 flex items-center justify-between">
+          <div className="pt-8 border-t border-zinc-800 flex items-center justify-between">
             <Link
               href="/contact"
               className="inline-flex items-center gap-2 bg-brand-orange text-black px-6 py-3 text-xs font-mono font-bold uppercase tracking-wider hover:bg-slate-950 hover:text-white transition-colors"

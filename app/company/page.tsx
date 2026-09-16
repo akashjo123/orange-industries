@@ -22,7 +22,7 @@ export default function CompanyPage() {
       />
 
       {/* 2.1 & 2.2 Company Overview & Corporate Proof (Cream Section) */}
-      <section className="py-20 bg-[#FAF7F2] text-zinc-900">
+      <section className="py-20 bg-zinc-950 text-zinc-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
@@ -30,10 +30,10 @@ export default function CompanyPage() {
               <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-widest block">
                 COMPANY OVERVIEW
               </span>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-zinc-900 tracking-tight">
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-zinc-50 tracking-tight">
                 Connected production model for programme, quality & site delivery
               </h2>
-              <p className="text-zinc-700 text-lg leading-relaxed">
+              <p className="text-zinc-300 text-lg leading-relaxed">
                 {companyData.description}
               </p>
 
@@ -41,15 +41,15 @@ export default function CompanyPage() {
                 <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-widest block">
                   CORPORATE PROOF
                 </span>
-                <h3 className="text-xl font-bold text-zinc-900">
+                <h3 className="text-xl font-bold text-zinc-50">
                   A manufacturing partner with the scale to deliver
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                  <div className="bg-white p-5 rounded-xl shadow-sm font-mono text-xs text-zinc-700">
+                  <div className="bg-zinc-900 p-5 rounded-xl shadow-sm font-mono text-xs text-zinc-300">
                     <span className="text-brand-orange font-bold block mb-1">BAHRAIN</span>
                     <span>Integrated Manufacturing Base & Laser Hub</span>
                   </div>
-                  <div className="bg-white p-5 rounded-xl shadow-sm font-mono text-xs text-zinc-700">
+                  <div className="bg-zinc-900 p-5 rounded-xl shadow-sm font-mono text-xs text-zinc-300">
                     <span className="text-brand-orange font-bold block mb-1">SAUDI ARABIA</span>
                     <span>Project Delivery & Site Contracting</span>
                   </div>
@@ -74,13 +74,13 @@ export default function CompanyPage() {
       </section>
 
       {/* 2.3 & 2.4 Production Disciplines (Cream Section) */}
-      <section className="py-20 bg-[#FAF7F2]">
+      <section className="py-20 bg-zinc-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           <div className="space-y-3">
             <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-widest block">
               FACTORY, PEOPLE & DISCIPLINES
             </span>
-            <h2 className="text-3xl font-extrabold text-zinc-900">
+            <h2 className="text-3xl font-extrabold text-zinc-50">
               Production control begins with real capability
             </h2>
             <p className="text-base text-zinc-500 font-mono">
@@ -90,9 +90,9 @@ export default function CompanyPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {companyData.productionDisciplines.map((item) => (
-              <div key={item.number} className="bg-white p-6 rounded-xl space-y-2 shadow-md hover:shadow-xl transition-shadow">
+              <div key={item.number} className="bg-zinc-900 p-6 rounded-xl space-y-2 shadow-md hover:shadow-xl transition-shadow">
                 <span className="font-mono text-xs font-bold text-brand-orange">{item.number}</span>
-                <h3 className="text-lg font-bold text-zinc-900">{item.title}</h3>
+                <h3 className="text-lg font-bold text-zinc-50">{item.title}</h3>
                 <p className="text-sm text-zinc-500 font-mono leading-relaxed">{item.description}</p>
               </div>
             ))}
@@ -101,34 +101,34 @@ export default function CompanyPage() {
       </section>
 
       {/* 2.8 Corporate + Regional Delivery (Cream Section) */}
-      <section className="py-20 bg-[#FAF7F2] text-zinc-900">
+      <section className="py-20 bg-zinc-950 text-zinc-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
           <div className="space-y-2">
             <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-widest">
               CORPORATE + REGIONAL DELIVERY
             </span>
-            <h2 className="text-3xl font-extrabold text-zinc-900">
+            <h2 className="text-3xl font-extrabold text-zinc-50">
               Clear legal identity supports confident contracting
             </h2>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 font-mono text-xs">
-            <div className="bg-white p-6 rounded-xl space-y-2 shadow-sm">
+            <div className="bg-zinc-900 p-6 rounded-xl space-y-2 shadow-sm">
               <span className="text-brand-orange font-bold block text-[10px]">CORPORATE IDENTITY</span>
-              <h4 className="font-bold text-zinc-900 text-base">{companyData.legalName}</h4>
-              <p className="text-zinc-600">Registered entity in the Kingdom of Bahrain</p>
+              <h4 className="font-bold text-zinc-50 text-base">{companyData.legalName}</h4>
+              <p className="text-zinc-400">Registered entity in the Kingdom of Bahrain</p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl space-y-2 shadow-sm">
+            <div className="bg-zinc-900 p-6 rounded-xl space-y-2 shadow-sm">
               <span className="text-brand-orange font-bold block text-[10px]">BAHRAIN HUB</span>
-              <h4 className="font-bold text-zinc-900 text-base">Manufacturing & Engineering</h4>
-              <p className="text-zinc-600">{companyData.regionalModel.bahrain}</p>
+              <h4 className="font-bold text-zinc-50 text-base">Manufacturing & Engineering</h4>
+              <p className="text-zinc-400">{companyData.regionalModel.bahrain}</p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl space-y-2 shadow-sm">
+            <div className="bg-zinc-900 p-6 rounded-xl space-y-2 shadow-sm">
               <span className="text-brand-orange font-bold block text-[10px]">SAUDI ARABIA & REGIONAL</span>
-              <h4 className="font-bold text-zinc-900 text-base">Client Servicing & Delivery</h4>
-              <p className="text-zinc-600">{companyData.regionalModel.saudi}</p>
+              <h4 className="font-bold text-zinc-50 text-base">Client Servicing & Delivery</h4>
+              <p className="text-zinc-400">{companyData.regionalModel.saudi}</p>
             </div>
           </div>
         </div>

@@ -4,9 +4,9 @@ import { companyData } from "@/data/company";
 
 export default function CTA() {
   return (
-    <section className="py-24 bg-[#FAF7F2] relative overflow-hidden">
+    <section className="py-24 bg-zinc-950 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="bg-white p-8 sm:p-16 relative overflow-hidden shadow-xl rounded-2xl">
+        <div className="bg-zinc-900 p-8 sm:p-16 relative overflow-hidden shadow-xl rounded-2xl">
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-8 space-y-6">
@@ -14,12 +14,12 @@ export default function CTA() {
                 PROJECT ENQUIRIES
               </span>
 
-              <h2 className="text-3xl sm:text-5xl font-extrabold text-zinc-900 tracking-tight leading-tight">
+              <h2 className="text-3xl sm:text-5xl font-extrabold text-zinc-50 tracking-tight leading-tight">
                 Bring us the brief. <br />
                 <span className="text-brand-orange font-light">We will engineer the outcome.</span>
               </h2>
 
-              <p className="text-base sm:text-lg text-zinc-600 max-w-2xl font-normal leading-relaxed">
+              <p className="text-base sm:text-lg text-zinc-400 max-w-2xl font-normal leading-relaxed">
                 Share your concept, drawings, BOQ or site requirement. Our team will assess the materials, manufacturing method, programme and installation approach.
               </p>
 
@@ -46,7 +46,7 @@ export default function CTA() {
               </Link>
               <Link
                 href="/portfolio"
-                className="w-full flex items-center justify-center gap-3 bg-[#FAF7F2] hover:bg-zinc-100 text-zinc-700 py-4 px-6 text-xs font-mono font-bold uppercase tracking-wider transition-all duration-200 rounded-xl"
+                className="w-full flex items-center justify-center gap-3 bg-zinc-950 hover:bg-zinc-800 text-zinc-300 py-4 px-6 text-xs font-mono font-bold uppercase tracking-wider transition-all duration-200 rounded-xl"
               >
                 <span>Explore Selected Work</span>
               </Link>
