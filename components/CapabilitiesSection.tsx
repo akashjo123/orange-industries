@@ -109,7 +109,7 @@ export default function CapabilitiesSection() {
                       src={cap.image}
                       alt={cap.title}
                       fill
-                      className="object-cover filter grayscale contrast-125 brightness-90"
+                      className="object-cover"
                     />
                   </div>
                 </div>
@@ -134,7 +134,7 @@ export default function CapabilitiesSection() {
                     src={activeCapability.image}
                     alt={activeCapability.title}
                     fill
-                    className="object-cover filter grayscale contrast-125 brightness-95 group-hover:scale-105 transition-transform duration-500"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute top-3 left-3 bg-[#FAF7F2]/90 backdrop-blur px-2.5 py-1 text-[10px] font-mono text-zinc-800 font-bold shadow-xs rounded-md">
                     DISCIPLINE {activeCapability.number}

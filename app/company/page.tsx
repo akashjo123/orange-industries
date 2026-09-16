@@ -60,9 +60,9 @@ export default function CompanyPage() {
             <div className="lg:col-span-5 relative h-96 rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/images/hero_industrial.jpg"
-                alt="Orange Industries Bahrain Manufacturing Shop Floor"
+                alt="Engineering Planning Session"
                 fill
-                className="object-cover filter grayscale contrast-125 brightness-95"
+                className="object-cover"
               />
               <div className="absolute bottom-4 left-4 bg-[#141416]/90 backdrop-blur px-3 py-1.5 rounded-lg font-mono text-xs text-brand-orange font-bold shadow-md">
                 {companyData.hubs.bahrain}

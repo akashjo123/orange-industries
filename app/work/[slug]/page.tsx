@@ -69,8 +69,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
               src={project.image}
               alt={project.title}
               fill
-              priority
-              className="object-cover filter grayscale contrast-125 brightness-95"
+              className="object-cover"
             />
           </div>
         </div>
