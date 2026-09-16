@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import ImageReveal from "./ImageReveal";
 import { sectors } from "@/data/sectors";
 
 export default function SectorsSection() {
@@ -125,13 +126,15 @@ export default function SectorsSection() {
 
             {/* Right Image */}
             <div className="lg:col-span-5 relative h-80 sm:h-96 border border-[#E7E0D3] overflow-hidden relative z-10">
-              <Image
-                src={currentSector.image}
-                alt={currentSector.title}
-                fill
-                className="object-cover"
-              />
-              <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-1.5 border border-[#E7E0D3] font-mono text-xs text-stone-900 font-bold">
+              <ImageReveal direction="down" delay={0.1}>
+                <Image
+                  src={currentSector.image}
+                  alt={currentSector.title}
+                  fill
+                  className="object-cover"
+                />
+              </ImageReveal>
+              <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-1.5 border border-[#E7E0D3] font-mono text-xs text-stone-900 font-bold z-10">
                 COVERAGE
               </div>
             </div>

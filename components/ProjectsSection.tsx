@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, CheckCircle2, Tag } from "lucide-react";
 import { motion } from "framer-motion";
+import ImageReveal from "./ImageReveal";
 import { projects, selectedPortfolioItems } from "@/data/projects";
 
 export default function ProjectsSection() {
@@ -57,12 +58,14 @@ export default function ProjectsSection() {
                 <div>
                   {/* Project Image Container */}
                   <div className="relative h-64 w-full overflow-hidden">
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-all duration-700"
-                    />
+                    <ImageReveal direction={idx % 2 === 0 ? "up" : "down"} delay={0.1 * idx}>
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-all duration-700"
+                      />
+                    </ImageReveal>
 
                     {/* Top Badge */}
                     <div className="absolute top-4 left-4 flex items-center gap-2">

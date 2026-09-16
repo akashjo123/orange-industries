@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import ImageReveal from "./ImageReveal";
 import { projects, selectedPortfolioItems, Project } from "@/data/projects";
 
 const categories = [
@@ -63,12 +64,14 @@ export default function ProjectFilterGrid() {
               >
                 <div>
                   <div className="relative h-64 w-full overflow-hidden">
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-all duration-700"
-                    />
+                    <ImageReveal direction="left" delay={0.1}>
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-all duration-700"
+                      />
+                    </ImageReveal>
 
                     <div className="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1.5 text-[11px] font-mono text-brand-orange font-bold uppercase rounded-md shadow-sm">
                       {project.client}
