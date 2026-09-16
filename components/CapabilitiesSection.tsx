@@ -6,7 +6,6 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import ImageReveal from "./ImageReveal";
 import { capabilities } from "@/data/capabilities";
 
 export default function CapabilitiesSection() {
@@ -106,14 +105,12 @@ export default function CapabilitiesSection() {
 
                   {/* Mobile Preview Image Inline */}
                   <div className="mt-4 block lg:hidden rounded-xl overflow-hidden relative h-48">
-                    <ImageReveal direction="left">
-                      <Image
-                        src={cap.image}
-                        alt={cap.title}
-                        fill
-                        className="object-cover"
-                      />
-                    </ImageReveal>
+                    <Image
+                      src={cap.image}
+                      alt={cap.title}
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                 </div>
               );
@@ -133,15 +130,13 @@ export default function CapabilitiesSection() {
               >
                 {/* Image Container */}
                 <div className="relative h-64 w-full overflow-hidden group rounded-xl">
-                  <ImageReveal direction="right">
-                    <Image
-                      src={activeCapability.image}
-                      alt={activeCapability.title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </ImageReveal>
-                  <div className="absolute top-3 left-3 bg-[#FAF7F2]/90 backdrop-blur px-2.5 py-1 text-[10px] font-mono text-zinc-800 font-bold shadow-xs rounded-md z-10">
+                  <Image
+                    src={activeCapability.image}
+                    alt={activeCapability.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute top-3 left-3 bg-[#FAF7F2]/90 backdrop-blur px-2.5 py-1 text-[10px] font-mono text-zinc-800 font-bold shadow-xs rounded-md">
                     DISCIPLINE {activeCapability.number}
                   </div>
                 </div>

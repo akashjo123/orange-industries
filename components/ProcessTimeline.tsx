@@ -4,7 +4,6 @@ import { useState } from "react";
 import Image from "next/image";
 import { CheckCircle2, ChevronRight, FileText, Settings, Hammer, ShieldCheck, Truck, Layers } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import ImageReveal from "./ImageReveal";
 import { companyData } from "@/data/company";
 
 const processStages = [
@@ -208,15 +207,13 @@ export default function ProcessTimeline() {
 
               {/* Right Column Image */}
               <div className="lg:col-span-5 relative h-72 sm:h-96 rounded-2xl overflow-hidden shadow-md">
-                <ImageReveal direction="right">
-                  <Image
-                    src={processStages[activeStage].image}
-                    alt={processStages[activeStage].title}
-                    fill
-                    className="object-cover"
-                  />
-                </ImageReveal>
-                <div className="absolute bottom-4 left-4 right-4 bg-[#FAF7F2]/90 backdrop-blur p-3 rounded-xl flex items-center justify-between text-xs font-mono shadow-sm z-10">
+                <Image
+                  src={processStages[activeStage].image}
+                  alt={processStages[activeStage].title}
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute bottom-4 left-4 right-4 bg-[#FAF7F2]/90 backdrop-blur p-3 rounded-xl flex items-center justify-between text-xs font-mono shadow-sm">
                   <span className="text-zinc-500">CONNECTED WORKFLOW:</span>
                   <span className="text-brand-orange font-bold">100% ACCOUNTABILITY</span>
                 </div>
