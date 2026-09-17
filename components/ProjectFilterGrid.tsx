@@ -70,9 +70,7 @@ export default function ProjectFilterGrid() {
                       className="object-cover group-hover:scale-105 transition-all duration-700"
                     />
 
-                    <div className="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1.5 text-[11px] font-mono text-brand-orange font-bold uppercase rounded-md shadow-sm">
-                      {project.client}
-                    </div>
+
 
                     <div className="absolute top-4 right-4 w-9 h-9 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-zinc-900 group-hover:bg-brand-orange group-hover:text-white transition-all duration-300 shadow-sm">
                       <ArrowUpRight className="w-4 h-4" />

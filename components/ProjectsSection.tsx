@@ -64,12 +64,7 @@ export default function ProjectsSection() {
                       className="object-cover group-hover:scale-105 transition-all duration-700"
                     />
 
-                    {/* Top Badge */}
-                    <div className="absolute top-4 left-4 flex items-center gap-2">
-                      <span className="bg-white/90 backdrop-blur px-3 py-1 text-[11px] font-mono text-stone-900 uppercase tracking-wider font-bold shadow-xs">
-                        {project.client}
-                      </span>
-                    </div>
+
 
                     {/* Top Right Arrow */}
                     <div className="absolute top-4 right-4 w-9 h-9 bg-white/90 backdrop-blur flex items-center justify-center text-stone-900 group-hover:bg-brand-orange group-hover:text-white transition-all duration-300 shadow-xs">
