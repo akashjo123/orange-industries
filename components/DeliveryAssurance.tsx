@@ -13,7 +13,7 @@ export default function DeliveryAssurance() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* PDF 2.6 Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div className="flex flex-col mb-16 space-y-6">
           <div>
             <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-3">
               <span className="font-mono text-xs font-bold text-brand-orange-text uppercase tracking-widest">
@@ -29,7 +29,7 @@ export default function DeliveryAssurance() {
               <span className="text-brand-orange-text font-light">procurement easier</span>
             </h2>
           </div>
-          <p className="text-base text-zinc-600 max-w-md font-mono leading-relaxed">
+          <p className="text-base sm:text-lg text-zinc-600 max-w-2xl font-mono leading-relaxed">
             Defined inclusions, exclusions, milestone access, stage inspections, and clear approval responsibilities.
           </p>
         </div>
