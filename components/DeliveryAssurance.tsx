@@ -29,9 +29,6 @@ export default function DeliveryAssurance() {
               <span className="text-brand-orange-text font-light">procurement easier</span>
             </h2>
           </div>
-          <p className="text-base sm:text-lg text-zinc-600 max-w-2xl font-mono leading-relaxed">
-            Defined inclusions, exclusions, milestone access, stage inspections, and clear approval responsibilities.
-          </p>
         </div>
 
         {/* PDF 2.6 Delivery Controls Grid */}
