@@ -18,7 +18,7 @@ export default function WorkPage() {
         description="Review our delivered case studies across event environments, architectural metalwork, infrastructure wayfinding, and custom product manufacturing in the GCC."
       />
 
-      <section className="py-20 bg-[#FAF7F2]">
+      <section className="py-12 bg-[#FAF7F2]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ProjectFilterGrid />
         </div>

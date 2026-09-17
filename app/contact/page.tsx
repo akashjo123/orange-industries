@@ -19,7 +19,7 @@ export default function ContactPage() {
         description="Share your concept, drawings, BOQ or site requirements. Our engineering team will assess manufacturing methods, material selection, and installation schedules."
       />
 
-      <section className="py-20 bg-[#FAF7F2]">
+      <section className="py-12 bg-[#FAF7F2]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
             

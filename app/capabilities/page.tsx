@@ -22,7 +22,7 @@ export default function CapabilitiesPage() {
       />
 
       {/* Capabilities Detail Showcase */}
-      <section className="py-20 bg-[#FAF7F2]">
+      <section className="py-12 bg-[#FAF7F2]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
           {capabilities.map((cap, idx) => {
             const isEven = idx % 2 === 0;
