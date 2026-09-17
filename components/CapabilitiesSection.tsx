@@ -22,7 +22,7 @@ export default function CapabilitiesSection() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>
             <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-3">
-              <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-widest">
+              <span className="font-mono text-xs font-bold text-brand-orange-text uppercase tracking-widest">
                 CAPABILITIES PREVIEW
               </span>
               <span className="text-zinc-300">•</span>
@@ -32,15 +32,15 @@ export default function CapabilitiesSection() {
             </div>
             <h2 className="text-3xl sm:text-5xl font-extrabold text-zinc-900 tracking-tight">
               Integrated production disciplines <br />
-              <span className="text-brand-orange font-light">create complete outcomes</span>
+              <span className="text-brand-orange-text font-light">create complete outcomes</span>
             </h2>
           </div>
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 text-zinc-700 font-mono text-xs uppercase tracking-wider font-bold hover:text-brand-orange transition-colors"
+            className="inline-flex items-center gap-2 text-zinc-700 font-mono text-xs uppercase tracking-wider font-bold hover:text-brand-orange-text transition-colors"
           >
             <span>View All Services</span>
-            <ArrowUpRight className="w-4 h-4 text-brand-orange" />
+            <ArrowUpRight className="w-4 h-4 text-brand-orange-text" />
           </Link>
         </div>
 
@@ -75,7 +75,7 @@ export default function CapabilitiesSection() {
                     <div className="flex items-start gap-5">
                       <span
                         className={`font-mono text-xl font-bold transition-colors ${
-                          isActive ? "text-brand-orange" : "text-zinc-300"
+                          isActive ? "text-brand-orange-text" : "text-zinc-300"
                         }`}
                       >
                         {cap.number}
@@ -88,7 +88,7 @@ export default function CapabilitiesSection() {
                         >
                           {cap.title}
                         </h3>
-                        <p className="text-sm text-brand-orange font-mono mt-1 font-semibold">
+                        <p className="text-sm text-brand-orange-text font-mono mt-1 font-semibold">
                           {cap.subtitle}
                         </p>
                       </div>
@@ -97,7 +97,7 @@ export default function CapabilitiesSection() {
                     <ArrowUpRight
                       className={`w-5 h-5 transition-all shrink-0 mt-1 ${
                         isActive
-                          ? "text-brand-orange translate-x-1 -translate-y-1 opacity-100"
+                          ? "text-brand-orange-text translate-x-1 -translate-y-1 opacity-100"
                           : "text-zinc-300 opacity-40"
                       }`}
                     />
@@ -141,7 +141,7 @@ export default function CapabilitiesSection() {
 
                 {/* Technical Overview */}
                 <div className="space-y-4 pt-6">
-                  <span className="font-mono text-xs text-brand-orange uppercase tracking-wider font-bold">
+                  <span className="font-mono text-xs text-brand-orange-text uppercase tracking-wider font-bold">
                     {activeCapability.subtitle}
                   </span>
                   <h4 className="text-2xl font-bold text-zinc-900">
@@ -157,7 +157,7 @@ export default function CapabilitiesSection() {
                     </span>
                     {activeCapability.items.map((item, idx) => (
                       <div key={idx} className="flex items-center gap-2 text-xs text-zinc-700 font-mono">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-brand-orange shrink-0" />
+                        <CheckCircle2 className="w-3.5 h-3.5 text-brand-orange-text shrink-0" />
                         <span>{item}</span>
                       </div>
                     ))}

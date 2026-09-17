@@ -39,7 +39,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
           <div className="space-y-6">
             <Link
               href="/portfolio"
-              className="inline-flex items-center gap-2 font-mono text-xs text-brand-orange uppercase tracking-wider hover:text-slate-950 transition-colors font-bold"
+              className="inline-flex items-center gap-2 font-mono text-xs text-brand-orange-text uppercase tracking-wider hover:text-slate-950 transition-colors font-bold"
             >
               <ArrowLeft className="w-4 h-4" />
               <span>Back to All Case Studies</span>
@@ -84,7 +84,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
             <div className="lg:col-span-8 space-y-8">
               {/* Client Challenge */}
               <div className="space-y-3 bg-white p-8 border border-slate-200 shadow-xs">
-                <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-widest block">
+                <span className="font-mono text-xs font-bold text-brand-orange-text uppercase tracking-widest block">
                   CLIENT CHALLENGE
                 </span>
                 <p className="text-base text-slate-900 font-medium leading-relaxed font-sans">
@@ -94,13 +94,13 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
 
               {/* Orange Industries Scope */}
               <div className="space-y-4 bg-white p-8 border border-slate-200 shadow-xs">
-                <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-widest block">
+                <span className="font-mono text-xs font-bold text-brand-orange-text uppercase tracking-widest block">
                   ORANGE INDUSTRIES SCOPE
                 </span>
                 <div className="space-y-2">
                   {project.scopeList.map((item, idx) => (
                     <div key={idx} className="flex items-center gap-2 text-sm text-slate-800 font-mono">
-                      <CheckCircle2 className="w-4 h-4 text-brand-orange shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 text-brand-orange-text shrink-0" />
                       <span>{item}</span>
                     </div>
                   ))}
@@ -112,10 +112,10 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
             <div className="lg:col-span-4 space-y-8">
               <div className="bg-white border border-slate-200 p-6 space-y-6 shadow-sm">
                 <div className="flex items-center justify-between border-b border-slate-200 pb-4">
-                  <span className="font-mono text-xs text-brand-orange uppercase tracking-widest font-bold">
+                  <span className="font-mono text-xs text-brand-orange-text uppercase tracking-widest font-bold">
                     CONNECTED EXECUTION
                   </span>
-                  <ShieldCheck className="w-4 h-4 text-brand-orange" />
+                  <ShieldCheck className="w-4 h-4 text-brand-orange-text" />
                 </div>
 
                 <p className="text-xs text-slate-600 font-mono leading-relaxed">

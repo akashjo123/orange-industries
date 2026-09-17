@@ -18,7 +18,7 @@ export default function ProjectsSection() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>
             <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-3">
-              <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-widest">
+              <span className="font-mono text-xs font-bold text-brand-orange-text uppercase tracking-widest">
                 SELECTED WORK PREVIEW
               </span>
               <span className="text-stone-400">•</span>
@@ -28,12 +28,12 @@ export default function ProjectsSection() {
             </div>
             <h2 className="text-3xl sm:text-5xl font-extrabold text-stone-900 tracking-tight">
               Additional work demonstrates breadth <br />
-              <span className="text-brand-orange font-light">without diluting focus</span>
+              <span className="text-brand-orange-text font-light">without diluting focus</span>
             </h2>
           </div>
           <Link
             href="/portfolio"
-            className="inline-flex items-center gap-2 text-brand-orange font-mono text-xs uppercase tracking-wider hover:text-stone-900 transition-colors font-bold"
+            className="inline-flex items-center gap-2 text-brand-orange-text font-mono text-xs uppercase tracking-wider hover:text-stone-900 transition-colors font-bold"
           >
             <span>View Full Portfolio</span>
             <ArrowUpRight className="w-4 h-4" />
@@ -74,7 +74,7 @@ export default function ProjectsSection() {
 
                   {/* Card Content Details */}
                   <div className="p-6 space-y-4 bg-white">
-                    <h3 className="text-xl font-extrabold text-stone-900 group-hover:text-brand-orange transition-colors">
+                    <h3 className="text-xl font-extrabold text-stone-900 group-hover:text-brand-orange-text transition-colors">
                       {project.title}
                     </h3>
 
@@ -88,7 +88,7 @@ export default function ProjectsSection() {
                       </span>
                       {project.scopeList.map((item, i) => (
                         <div key={i} className="flex items-center gap-1.5 text-xs font-mono text-stone-700">
-                          <CheckCircle2 className="w-3 h-3 text-brand-orange shrink-0" />
+                          <CheckCircle2 className="w-3 h-3 text-brand-orange-text shrink-0" />
                           <span className="truncate">{item}</span>
                         </div>
                       ))}
@@ -99,7 +99,7 @@ export default function ProjectsSection() {
                 <div className="p-6 pt-0 bg-white">
                   <div className="pt-4 flex items-center justify-between text-xs font-mono">
                     <span className="text-stone-500">CASE STUDY</span>
-                    <span className="text-brand-orange font-bold uppercase tracking-wider text-[11px] flex items-center gap-1">
+                    <span className="text-brand-orange-text font-bold uppercase tracking-wider text-[11px] flex items-center gap-1">
                       <span>View Scope</span>
                       <ArrowUpRight className="w-3.5 h-3.5" />
                     </span>
@@ -113,7 +113,7 @@ export default function ProjectsSection() {
         {/* PDF 4.7 SELECTED PORTFOLIO LIST */}
         <div className="mt-16 bg-white p-8 space-y-6 shadow-sm rounded-sm">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 gap-4">
-            <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-wider">
+            <span className="font-mono text-xs font-bold text-brand-orange-text uppercase tracking-wider">
               ADDITIONAL SELECTED PORTFOLIO PROJECTS
             </span>
             <span className="font-mono text-xs text-stone-500 font-semibold">VERIFIED EXECUTION</span>
@@ -123,7 +123,7 @@ export default function ProjectsSection() {
             {selectedPortfolioItems.map((item, idx) => (
               <div
                 key={idx}
-                className="bg-[#F1ECE1] p-4 text-center font-mono text-xs font-bold text-stone-800 hover:text-brand-orange transition-colors shadow-xs rounded-sm"
+                className="bg-[#F1ECE1] p-4 text-center font-mono text-xs font-bold text-stone-800 hover:text-brand-orange-text transition-colors shadow-xs rounded-sm"
               >
                 {item}
               </div>

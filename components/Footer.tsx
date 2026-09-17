@@ -21,11 +21,11 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-4 text-xs font-mono text-slate-400">
               <span className="flex items-center gap-1.5 bg-white/5 px-3 py-1.5 rounded-md">
-                <MapPin className="w-3.5 h-3.5 text-brand-orange" />
+                <MapPin className="w-3.5 h-3.5 text-brand-orange-text" />
                 Bahrain Base
               </span>
               <span className="flex items-center gap-1.5 bg-white/5 px-3 py-1.5 rounded-md">
-                <ShieldCheck className="w-3.5 h-3.5 text-brand-orange" />
+                <ShieldCheck className="w-3.5 h-3.5 text-brand-orange-text" />
                 Saudi Project Delivery
               </span>
             </div>
@@ -33,7 +33,7 @@ export default function Footer() {
 
           {/* Quick Navigation */}
           <div className="space-y-4">
-            <h4 className="font-mono text-xs text-brand-orange uppercase tracking-widest font-bold">
+            <h4 className="font-mono text-xs text-brand-orange-text uppercase tracking-widest font-bold">
               Navigation
             </h4>
             <ul className="space-y-2.5 text-xs font-mono">
@@ -47,7 +47,7 @@ export default function Footer() {
 
           {/* Core Services Links */}
           <div className="space-y-4">
-            <h4 className="font-mono text-xs text-brand-orange uppercase tracking-widest font-bold">
+            <h4 className="font-mono text-xs text-brand-orange-text uppercase tracking-widest font-bold">
               Core Services
             </h4>
             <ul className="space-y-2.5 text-xs font-mono">
@@ -62,15 +62,15 @@ export default function Footer() {
 
           {/* Contact Direct */}
           <div className="space-y-4">
-            <h4 className="font-mono text-xs text-brand-orange uppercase tracking-widest font-bold">
+            <h4 className="font-mono text-xs text-brand-orange-text uppercase tracking-widest font-bold">
               Direct Contact
             </h4>
             <div className="space-y-3 text-xs">
               <a 
                 href="mailto:projects@orangeindustries.me" 
-                className="flex items-center gap-2 text-white hover:text-brand-orange transition-colors group font-mono"
+                className="flex items-center gap-2 text-white hover:text-brand-orange-text transition-colors group font-mono"
               >
-                <Mail className="w-4 h-4 text-brand-orange" />
+                <Mail className="w-4 h-4 text-brand-orange-text" />
                 <span>projects@orangeindustries.me</span>
                 <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
               </a>

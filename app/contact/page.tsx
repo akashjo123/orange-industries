@@ -26,7 +26,7 @@ export default function ContactPage() {
             {/* Left Column: Direct Contacts & Operational Hubs */}
             <div className="lg:col-span-4 space-y-8">
               <div className="bg-white rounded-2xl shadow-sm p-8 space-y-6">
-                <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-widest block">
+                <span className="font-mono text-xs font-bold text-brand-orange-text uppercase tracking-widest block">
                   DIRECT COMMUNICATIONS
                 </span>
 
@@ -35,9 +35,9 @@ export default function ContactPage() {
                     <span className="text-zinc-400 block text-[10px] uppercase">PROJECT ENQUIRIES</span>
                     <a
                       href={`mailto:${companyData.email}`}
-                      className="text-zinc-900 font-bold text-sm hover:text-brand-orange transition-colors flex items-center gap-2"
+                      className="text-zinc-900 font-bold text-sm hover:text-brand-orange-text transition-colors flex items-center gap-2"
                     >
-                      <Mail className="w-4 h-4 text-brand-orange" />
+                      <Mail className="w-4 h-4 text-brand-orange-text" />
                       <span>{companyData.email}</span>
                     </a>
                   </div>
@@ -58,7 +58,7 @@ export default function ContactPage() {
                   <div className="space-y-1 pt-3">
                     <span className="text-zinc-400 block text-[10px] uppercase">RESPONSE TIMELINE</span>
                     <div className="flex items-center gap-2 text-zinc-700">
-                      <Clock className="w-4 h-4 text-brand-orange" />
+                      <Clock className="w-4 h-4 text-brand-orange-text" />
                       <span>Within 1 Business Day</span>
                     </div>
                   </div>
@@ -67,14 +67,14 @@ export default function ContactPage() {
 
               {/* Regional Locations */}
               <div className="bg-white rounded-2xl shadow-sm p-8 space-y-6">
-                <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-widest block">
+                <span className="font-mono text-xs font-bold text-brand-orange-text uppercase tracking-widest block">
                   REGIONAL OPERATIONAL BASES
                 </span>
 
                 <div className="space-y-6 text-xs font-mono">
                   <div className="space-y-2">
                     <div className="flex items-center gap-2 text-zinc-900 font-bold text-sm">
-                      <MapPin className="w-4 h-4 text-brand-orange" />
+                      <MapPin className="w-4 h-4 text-brand-orange-text" />
                       <span>KINGDOM OF BAHRAIN</span>
                     </div>
                     <p className="text-zinc-500 pl-6 leading-relaxed">
@@ -84,7 +84,7 @@ export default function ContactPage() {
 
                   <div className="space-y-2 pt-4">
                     <div className="flex items-center gap-2 text-zinc-900 font-bold text-sm">
-                      <ShieldCheck className="w-4 h-4 text-brand-orange" />
+                      <ShieldCheck className="w-4 h-4 text-brand-orange-text" />
                       <span>KINGDOM OF SAUDI ARABIA</span>
                     </div>
                     <p className="text-zinc-500 pl-6 leading-relaxed">

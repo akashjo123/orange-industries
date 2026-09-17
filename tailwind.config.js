@@ -11,6 +11,7 @@ module.exports = {
         brand: {
           orange: "#FF5500",
           "orange-hover": "#E04B00",
+          "orange-text": "#C84300", // Muted/darker orange for text
           "orange-light": "#FF7733",
           "orange-soft": "#FFF0E6",
           cream: "#FAF7F2",

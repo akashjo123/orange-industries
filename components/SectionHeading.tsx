@@ -22,7 +22,7 @@ export default function SectionHeading({
       {/* Number & Eyebrow Badge */}
       <div className="flex items-center gap-3">
         {number && (
-          <span className="font-mono text-xs font-bold text-brand-orange bg-brand-orange/10 px-2.5 py-1 border border-brand-orange/20 tracking-wider">
+          <span className="font-mono text-xs font-bold text-brand-orange-text bg-brand-orange/10 px-2.5 py-1 border border-brand-orange/20 tracking-wider">
             {number}
           </span>
         )}

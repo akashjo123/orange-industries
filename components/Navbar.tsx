@@ -64,7 +64,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   className={`relative text-xs font-mono tracking-widest uppercase transition-colors duration-200 py-1 ${
-                    isActive ? "text-brand-orange font-bold" : "text-zinc-300 hover:text-white"
+                    isActive ? "text-brand-orange-text font-bold" : "text-zinc-300 hover:text-white"
                   }`}
                 >
                   {link.label}
@@ -94,10 +94,10 @@ export default function Navbar() {
           {/* Mobile Menu Trigger */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 text-white hover:text-brand-orange transition-colors"
+            className="md:hidden p-2 text-white hover:text-brand-orange-text transition-colors"
             aria-label="Toggle Navigation Menu"
           >
-            {mobileMenuOpen ? <X className="w-6 h-6 text-brand-orange" /> : <Menu className="w-6 h-6" />}
+            {mobileMenuOpen ? <X className="w-6 h-6 text-brand-orange-text" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
       </header>
@@ -116,7 +116,7 @@ export default function Navbar() {
             <div className="absolute inset-0 bg-grid-line opacity-20 pointer-events-none" />
 
             <div className="relative z-10 flex flex-col gap-5 my-auto">
-              <span className="font-mono text-xs text-brand-orange uppercase tracking-widest">
+              <span className="font-mono text-xs text-brand-orange-text uppercase tracking-widest">
                 Navigation Directory
               </span>
               {navLinks.map((link, idx) => (
@@ -129,7 +129,7 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="flex items-center justify-between text-2xl font-bold text-white hover:text-brand-orange transition-colors py-2.5 border-b border-slate-800/80"
+                    className="flex items-center justify-between text-2xl font-bold text-white hover:text-brand-orange-text transition-colors py-2.5 border-b border-slate-800/80"
                   >
                     <span>{link.label}</span>
                     <span className="font-mono text-xs text-slate-500">0{idx + 1}</span>
@@ -141,7 +141,7 @@ export default function Navbar() {
             <div className="relative z-10 space-y-4 pt-6 border-t border-slate-800">
               <div className="text-xs font-mono text-slate-400">
                 <p>Bahrain Manufacturing Hub</p>
-                <p className="text-brand-orange font-bold">projects@orangeindustries.me</p>
+                <p className="text-brand-orange-text font-bold">projects@orangeindustries.me</p>
               </div>
               <Link
                 href="/contact"

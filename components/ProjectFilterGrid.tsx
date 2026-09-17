@@ -78,7 +78,7 @@ export default function ProjectFilterGrid() {
                   </div>
 
                   <div className="p-6 space-y-4">
-                    <h3 className="text-xl font-extrabold text-zinc-900 group-hover:text-brand-orange transition-colors">
+                    <h3 className="text-xl font-extrabold text-zinc-900 group-hover:text-brand-orange-text transition-colors">
                       {project.title}
                     </h3>
 
@@ -87,12 +87,12 @@ export default function ProjectFilterGrid() {
                     </p>
 
                     <div className="pt-2 space-y-1">
-                      <span className="font-mono text-[10px] text-brand-orange uppercase tracking-wider font-semibold block">
+                      <span className="font-mono text-[10px] text-brand-orange-text uppercase tracking-wider font-semibold block">
                         ORANGE INDUSTRIES SCOPE:
                       </span>
                       {project.scopeList.map((item, i) => (
                         <div key={i} className="flex items-center gap-1.5 text-xs font-mono text-zinc-600">
-                          <CheckCircle2 className="w-3 h-3 text-brand-orange shrink-0" />
+                          <CheckCircle2 className="w-3 h-3 text-brand-orange-text shrink-0" />
                           <span className="truncate">{item}</span>
                         </div>
                       ))}
@@ -103,7 +103,7 @@ export default function ProjectFilterGrid() {
                 <div className="p-6 pt-0">
                   <div className="pt-4 flex items-center justify-between text-xs font-mono">
                     <span className="text-zinc-500">FLAGSHIP CASE STUDY</span>
-                    <span className="text-brand-orange font-bold uppercase tracking-wider text-[11px] flex items-center gap-1">
+                    <span className="text-brand-orange-text font-bold uppercase tracking-wider text-[11px] flex items-center gap-1">
                       <span>View Details</span>
                       <ArrowUpRight className="w-3.5 h-3.5" />
                     </span>
@@ -118,7 +118,7 @@ export default function ProjectFilterGrid() {
       {/* PDF 4.7 SELECTED PORTFOLIO LIST */}
       <div className="bg-white rounded-xl p-8 space-y-6 shadow-md">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-2 gap-4">
-          <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-wider">
+          <span className="font-mono text-xs font-bold text-brand-orange-text uppercase tracking-wider">
             ADDITIONAL SELECTED PORTFOLIO PROJECTS
           </span>
           <span className="font-mono text-xs text-zinc-500">VERIFIED EXECUTION</span>
@@ -128,7 +128,7 @@ export default function ProjectFilterGrid() {
           {selectedPortfolioItems.map((item, idx) => (
             <div
               key={idx}
-              className="bg-[#FAF7F2] p-4 rounded-lg text-center font-mono text-xs font-bold text-zinc-700 hover:text-brand-orange transition-colors shadow-xs"
+              className="bg-[#FAF7F2] p-4 rounded-lg text-center font-mono text-xs font-bold text-zinc-700 hover:text-brand-orange-text transition-colors shadow-xs"
             >
               {item}
             </div>
