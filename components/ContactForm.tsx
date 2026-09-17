@@ -88,7 +88,7 @@ export default function ContactForm() {
 
             <div className="bg-[#3F3F46]/50 p-4 border border-zinc-700 text-xs font-mono text-zinc-300 space-y-1">
               <p>REFERENCE ID: <span className="text-brand-orange-text font-bold">OI-ENQ-{Math.floor(100000 + Math.random() * 900000)}</span></p>
-              <p>DIRECT EMAIL: projects@orangeindustries.me</p>
+              <p>DIRECT EMAIL: contact@orangeindustries.me</p>
             </div>
 
             <button
