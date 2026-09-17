@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, ShieldCheck, MapPin, Mail, Globe } from "lucide-react";
+import { ArrowUpRight, ShieldCheck, MapPin, Mail, Globe, Phone } from "lucide-react";
 import Logo from "@/components/Logo";
 
 export default function Footer() {
@@ -72,6 +72,14 @@ export default function Footer() {
               >
                 <Mail className="w-4 h-4 text-brand-orange-text" />
                 <span>contact@orangeindustries.me</span>
+                <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </a>
+              <a 
+                href="tel:+97332230726" 
+                className="flex items-center gap-2 text-white hover:text-brand-orange-text transition-colors group font-mono"
+              >
+                <Phone className="w-4 h-4 text-brand-orange-text" />
+                <span>+973 3223 0726</span>
                 <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
               </a>
               <a 
