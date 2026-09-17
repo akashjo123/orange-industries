@@ -20,7 +20,7 @@ export default function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   return (
-    <section ref={ref} className="relative min-h-screen flex flex-col justify-center pt-32 pb-24 overflow-hidden bg-[#1f1d1d] border-b border-zinc-800">
+    <section ref={ref} className="relative min-h-screen flex flex-col justify-center pt-24 pb-16 overflow-hidden bg-[#1f1d1d] border-b border-zinc-800">
       {/* Background Animation Container */}
       <motion.div style={{ y: backgroundY }} className="absolute inset-0 z-0 h-[120%] -top-[10%] bg-[#1f1d1d]">
         <Threads 

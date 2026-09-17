@@ -8,7 +8,7 @@ import { projects, selectedPortfolioItems } from "@/data/projects";
 
 export default function ProjectsSection() {
   return (
-    <section id="work" className="py-24 bg-[#FAF7F2] relative overflow-hidden">
+    <section id="work" className="py-16 bg-[#FAF7F2] relative overflow-hidden">
       {/* Background Grid Pattern */}
       <div className="absolute inset-0 bg-grid-line opacity-25 pointer-events-none" />
 

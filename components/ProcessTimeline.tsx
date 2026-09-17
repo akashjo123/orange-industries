@@ -73,7 +73,7 @@ export default function ProcessTimeline() {
   const [activeStage, setActiveStage] = useState(0);
 
   return (
-    <section id="process" className="py-24 bg-[#FAF7F2] relative overflow-hidden">
+    <section id="process" className="py-16 bg-[#FAF7F2] relative overflow-hidden">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
