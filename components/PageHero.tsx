@@ -14,13 +14,13 @@ export default function PageHero({
   description,
 }: PageHeroProps) {
   return (
-    <section className="pt-36 pb-20 bg-[#FAF7F2] relative overflow-hidden">
+    <section className="pt-32 pb-10 bg-[#FAF7F2] relative overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-25 pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-3xl space-y-6">
-          <div className="flex items-center gap-2 text-brand-orange-text font-mono text-xs font-extrabold uppercase tracking-widest">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col items-center text-center">
+        <div className="max-w-4xl space-y-6">
+          <div className="flex items-center justify-center gap-2 text-brand-orange-text font-mono text-xs font-extrabold uppercase tracking-widest">
             <span>{eyebrow}</span>
           </div>
 
@@ -28,7 +28,7 @@ export default function PageHero({
             {title}
           </h1>
 
-          <p className="text-lg text-zinc-600 font-normal leading-relaxed">
+          <p className="text-lg sm:text-xl text-zinc-600 font-normal leading-relaxed max-w-2xl mx-auto">
             {description}
           </p>
         </div>

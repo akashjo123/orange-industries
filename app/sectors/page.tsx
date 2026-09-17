@@ -21,7 +21,7 @@ export default function SectorsPage() {
         description="Tailored production capabilities for event activations, commercial rollouts, and specialized public sector signage."
       />
 
-      <section className="py-20 bg-[#FAF7F2]">
+      <section className="py-12 bg-[#FAF7F2]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
           {sectors.map((sector) => (
             <div

@@ -20,7 +20,7 @@ export default function BlogPage() {
         description="Official publication hub for engineering whitepapers, project insights, and manufacturing content."
       />
 
-      <section className="py-20 bg-[#FAF7F2]">
+      <section className="py-12 bg-[#FAF7F2]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           {/* PDF Section 5 Official Notice */}
           <div className="bg-white rounded-xl shadow-sm p-8 space-y-3">

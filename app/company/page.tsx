@@ -22,7 +22,7 @@ export default function CompanyPage() {
       />
 
       {/* 2.1 & 2.2 Company Overview & Corporate Proof (Cream Section) */}
-      <section className="py-20 bg-[#FAF7F2] text-zinc-900">
+      <section className="py-12 bg-[#FAF7F2] text-zinc-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
@@ -74,7 +74,7 @@ export default function CompanyPage() {
       </section>
 
       {/* 2.3 & 2.4 Production Disciplines (Cream Section) */}
-      <section className="py-20 bg-[#FAF7F2]">
+      <section className="py-12 bg-[#FAF7F2]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           <div className="space-y-3">
             <span className="font-mono text-xs font-bold text-brand-orange-text uppercase tracking-widest block">
@@ -101,7 +101,7 @@ export default function CompanyPage() {
       </section>
 
       {/* 2.8 Corporate + Regional Delivery (Cream Section) */}
-      <section className="py-20 bg-[#FAF7F2] text-zinc-900">
+      <section className="py-12 bg-[#FAF7F2] text-zinc-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
           <div className="space-y-2">
             <span className="font-mono text-xs font-bold text-brand-orange-text uppercase tracking-widest">
