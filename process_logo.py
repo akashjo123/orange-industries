@@ -41,7 +41,7 @@ try:
     img_cropped = img.crop((min_x, min_y, max_x+1, max_y+1))
     # Resize to 120x120 for consistency
     img_cropped = img_cropped.resize((120, 120), Image.LANCZOS)
-    img_cropped.save("public/new_logo.png")
+    img_cropped.save("public/logo_1.png")
     print("Success")
 except Exception as e:
     print("Error:", e)

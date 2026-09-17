@@ -11,7 +11,7 @@ export default function Logo({ className = "h-9", iconOnly = false, lightMode = 
   return (
     <div className={`flex items-center gap-3.5 select-none ${className}`}>
       <Image
-        src="/new_logo.png"
+        src="/logo_1.png"
         alt="Orange Industries Logo Mark"
         width={120}
         height={120}
