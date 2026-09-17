@@ -65,7 +65,7 @@ export const companyData = {
     saudi: "Saudi Arabia: client-servicing / contracting / installation model",
     uae: "UAE: planned expansion"
   },
-  email: "projects@orangeindustries.me",
+  email: "contact@orangeindustries.me",
   website: "www.orangeindustries.me",
   responseTarget: "Within one business day"
 };

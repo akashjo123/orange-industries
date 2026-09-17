@@ -141,7 +141,7 @@ export default function Navbar() {
             <div className="relative z-10 space-y-4 pt-6 border-t border-slate-800">
               <div className="text-xs font-mono text-slate-400">
                 <p>Bahrain Manufacturing Hub</p>
-                <p className="text-brand-orange-text font-bold">projects@orangeindustries.me</p>
+                <p className="text-brand-orange-text font-bold">contact@orangeindustries.me</p>
               </div>
               <Link
                 href="/contact"

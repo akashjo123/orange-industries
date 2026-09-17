@@ -67,11 +67,11 @@ export default function Footer() {
             </h4>
             <div className="space-y-3 text-xs">
               <a 
-                href="mailto:projects@orangeindustries.me" 
+                href="mailto:contact@orangeindustries.me" 
                 className="flex items-center gap-2 text-white hover:text-brand-orange-text transition-colors group font-mono"
               >
                 <Mail className="w-4 h-4 text-brand-orange-text" />
-                <span>projects@orangeindustries.me</span>
+                <span>contact@orangeindustries.me</span>
                 <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
               </a>
               <a 
