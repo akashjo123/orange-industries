@@ -15,7 +15,7 @@ export default function CapabilitiesSection() {
   const activeCapability = capabilities.find((c) => c.id === activeId) || capabilities[0];
 
   return (
-    <section id="capabilities" className="py-24 bg-[#FAF7F2] relative">
+    <section id="capabilities" className="py-16 bg-[#FAF7F2] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}

@@ -13,7 +13,7 @@ export default function SectorsSection() {
   const currentSector = sectors.find((s) => s.id === activeSectorId) || sectors[0];
 
   return (
-    <section id="sectors" className="py-24 bg-[#FAF7F2] relative overflow-hidden">
+    <section id="sectors" className="py-16 bg-[#FAF7F2] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Clean Normal Sub Heading */}
