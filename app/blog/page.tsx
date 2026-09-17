@@ -24,7 +24,7 @@ export default function BlogPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           {/* PDF Section 5 Official Notice */}
           <div className="bg-white rounded-xl shadow-sm p-8 space-y-3">
-            <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-wider block">
+            <span className="font-mono text-xs font-bold text-brand-orange-text uppercase tracking-wider block">
               DOCUMENTATION FLOW SPECIFICATION
             </span>
             <p className="text-base font-mono text-zinc-700 leading-relaxed">
@@ -46,7 +46,7 @@ export default function BlogPage() {
                       fill
                       className="object-cover group-hover:scale-105 transition-all duration-500"
                     />
-                    <div className="absolute top-4 left-4 bg-[#141416]/90 backdrop-blur px-3 py-1.5 text-[11px] font-mono text-brand-orange font-bold uppercase rounded-md shadow-sm">
+                    <div className="absolute top-4 left-4 bg-[#141416]/90 backdrop-blur px-3 py-1.5 text-[11px] font-mono text-brand-orange-text font-bold uppercase rounded-md shadow-sm">
                       {post.category}
                     </div>
                   </div>
@@ -54,7 +54,7 @@ export default function BlogPage() {
                   <div className="p-6 space-y-4">
                     <div className="flex items-center gap-3 text-xs font-mono text-zinc-400">
                       <span className="flex items-center gap-1">
-                        <Calendar className="w-3.5 h-3.5 text-brand-orange" />
+                        <Calendar className="w-3.5 h-3.5 text-brand-orange-text" />
                         {post.date}
                       </span>
                       <span>·</span>
@@ -64,7 +64,7 @@ export default function BlogPage() {
                       </span>
                     </div>
 
-                    <h2 className="text-xl font-bold text-zinc-900 group-hover:text-brand-orange transition-colors line-clamp-2">
+                    <h2 className="text-xl font-bold text-zinc-900 group-hover:text-brand-orange-text transition-colors line-clamp-2">
                       <Link href={`/blog/${post.slug}`}>{post.title}</Link>
                     </h2>
 
@@ -77,12 +77,12 @@ export default function BlogPage() {
                 <div className="p-6 pt-0">
                   <div className="pt-4 flex items-center justify-between text-xs font-mono">
                     <span className="text-zinc-400 flex items-center gap-1">
-                      <FileText className="w-3.5 h-3.5 text-brand-orange" />
+                      <FileText className="w-3.5 h-3.5 text-brand-orange-text" />
                       Future Article
                     </span>
                     <Link
                       href={`/blog/${post.slug}`}
-                      className="text-brand-orange font-bold uppercase tracking-wider text-[11px] flex items-center gap-1 hover:text-zinc-900 transition-colors"
+                      className="text-brand-orange-text font-bold uppercase tracking-wider text-[11px] flex items-center gap-1 hover:text-zinc-900 transition-colors"
                     >
                       <span>Read Specification</span>
                       <ArrowUpRight className="w-3.5 h-3.5" />

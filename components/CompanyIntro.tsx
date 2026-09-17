@@ -12,7 +12,7 @@ export default function CompanyIntro() {
         
         {/* Clean Normal Sub Heading */}
         <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-6">
-          <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-widest">
+          <span className="font-mono text-xs font-bold text-brand-orange-text uppercase tracking-widest">
             COMPANY INTRODUCTION
           </span>
           <span className="text-stone-400">•</span>
@@ -37,7 +37,7 @@ export default function CompanyIntro() {
               className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-stone-900 leading-[1.1] tracking-tight"
             >
               A single accountable <br className="hidden sm:block" />
-              <span className="text-brand-orange font-light">manufacturing partner</span>
+              <span className="text-brand-orange-text font-light">manufacturing partner</span>
             </motion.h2>
 
             <div className="flex flex-wrap items-center gap-3 text-xs font-mono">
@@ -84,7 +84,7 @@ export default function CompanyIntro() {
         {/* PDF 1.3 WHY ORANGE INDUSTRIES */}
         <div className="pt-16 space-y-12">
           <div className="space-y-3">
-            <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-widest">
+            <span className="font-mono text-xs font-bold text-brand-orange-text uppercase tracking-widest">
               WHY ORANGE INDUSTRIES
             </span>
             <h3 className="text-2xl sm:text-4xl font-extrabold text-stone-900">
@@ -103,7 +103,7 @@ export default function CompanyIntro() {
                 className="bg-white p-6 transition-all duration-300 relative group shadow-sm hover:shadow-md"
               >
                 <div className="flex items-center justify-between mb-4">
-                  <span className="font-mono text-2xl font-bold text-brand-orange">
+                  <span className="font-mono text-2xl font-bold text-brand-orange-text">
                     {item.number}
                   </span>
                   <span className="w-2 h-2 rounded-full bg-stone-300 group-hover:bg-brand-orange transition-colors" />

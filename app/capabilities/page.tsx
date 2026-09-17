@@ -53,7 +53,7 @@ export default function CapabilitiesPage() {
                     isEven ? "lg:order-2" : "lg:order-1"
                   }`}
                 >
-                  <div className="flex items-center gap-2 text-xs font-mono text-brand-orange font-bold">
+                  <div className="flex items-center gap-2 text-xs font-mono text-brand-orange-text font-bold">
                     <span>CAPABILITY {cap.number}</span>
                     <span className="opacity-50">|</span>
                     <span>{cap.subtitle}</span>
@@ -69,13 +69,13 @@ export default function CapabilitiesPage() {
 
                   {/* Included Elements List */}
                   <div className="bg-white p-6 rounded-xl shadow-sm space-y-3">
-                    <span className="font-mono text-xs text-brand-orange uppercase tracking-wider block font-bold">
+                    <span className="font-mono text-xs text-brand-orange-text uppercase tracking-wider block font-bold">
                       INCLUDED PRODUCTION ELEMENTS:
                     </span>
                     <ul className="space-y-2 text-xs text-zinc-700 font-mono">
                       {cap.items.map((item, i) => (
                         <li key={i} className="flex items-center gap-2">
-                          <CheckCircle2 className="w-3.5 h-3.5 text-brand-orange shrink-0" />
+                          <CheckCircle2 className="w-3.5 h-3.5 text-brand-orange-text shrink-0" />
                           <span>{item}</span>
                         </li>
                       ))}

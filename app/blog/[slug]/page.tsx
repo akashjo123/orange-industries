@@ -37,7 +37,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-6">
           <Link
             href="/blog"
-            className="inline-flex items-center gap-2 font-mono text-xs text-brand-orange uppercase tracking-wider hover:text-slate-950 transition-colors font-bold"
+            className="inline-flex items-center gap-2 font-mono text-xs text-brand-orange-text uppercase tracking-wider hover:text-slate-950 transition-colors font-bold"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Back to All Insights</span>
@@ -49,7 +49,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             </span>
             <span>·</span>
             <span className="flex items-center gap-1">
-              <Calendar className="w-3.5 h-3.5 text-brand-orange" />
+              <Calendar className="w-3.5 h-3.5 text-brand-orange-text" />
               {post.date}
             </span>
             <span>·</span>

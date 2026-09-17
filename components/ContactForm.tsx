@@ -70,11 +70,11 @@ export default function ContactForm() {
             exit={{ opacity: 0, scale: 0.95 }}
             className="py-12 px-6 text-center space-y-6 max-w-lg mx-auto"
           >
-            <div className="w-16 h-16 bg-brand-orange/20 border border-brand-orange text-brand-orange mx-auto flex items-center justify-center rounded-full">
+            <div className="w-16 h-16 bg-brand-orange/20 border border-brand-orange text-brand-orange-text mx-auto flex items-center justify-center rounded-full">
               <CheckCircle2 className="w-8 h-8" />
             </div>
 
-            <span className="font-mono text-xs text-brand-orange uppercase tracking-widest block font-bold">
+            <span className="font-mono text-xs text-brand-orange-text uppercase tracking-widest block font-bold">
               ENQUIRY RECEIVED
             </span>
 
@@ -87,7 +87,7 @@ export default function ContactForm() {
             </p>
 
             <div className="bg-[#3F3F46]/50 p-4 border border-zinc-700 text-xs font-mono text-zinc-300 space-y-1">
-              <p>REFERENCE ID: <span className="text-brand-orange font-bold">OI-ENQ-{Math.floor(100000 + Math.random() * 900000)}</span></p>
+              <p>REFERENCE ID: <span className="text-brand-orange-text font-bold">OI-ENQ-{Math.floor(100000 + Math.random() * 900000)}</span></p>
               <p>DIRECT EMAIL: projects@orangeindustries.me</p>
             </div>
 
@@ -109,7 +109,7 @@ export default function ContactForm() {
               className="inline-flex items-center gap-2 bg-white text-zinc-950 hover:bg-zinc-200 px-6 py-3 text-xs font-mono font-bold uppercase tracking-wider transition-colors shadow-sm"
             >
               <span>Submit Another Project Brief</span>
-              <ArrowUpRight className="w-4 h-4 text-brand-orange" />
+              <ArrowUpRight className="w-4 h-4 text-brand-orange-text" />
             </button>
           </motion.div>
         ) : (
@@ -131,7 +131,7 @@ export default function ContactForm() {
               {/* Name */}
               <div className="space-y-2">
                 <label className="font-mono text-xs text-zinc-300 uppercase tracking-wider block font-semibold">
-                  Your Name <span className="text-brand-orange">*</span>
+                  Your Name <span className="text-brand-orange-text">*</span>
                 </label>
                 <input
                   type="text"
@@ -146,7 +146,7 @@ export default function ContactForm() {
               {/* Company */}
               <div className="space-y-2">
                 <label className="font-mono text-xs text-zinc-300 uppercase tracking-wider block font-semibold">
-                  Company / Organization <span className="text-brand-orange">*</span>
+                  Company / Organization <span className="text-brand-orange-text">*</span>
                 </label>
                 <input
                   type="text"
@@ -161,7 +161,7 @@ export default function ContactForm() {
               {/* Email */}
               <div className="space-y-2">
                 <label className="font-mono text-xs text-zinc-300 uppercase tracking-wider block font-semibold">
-                  Work Email <span className="text-brand-orange">*</span>
+                  Work Email <span className="text-brand-orange-text">*</span>
                 </label>
                 <input
                   type="email"
@@ -222,7 +222,7 @@ export default function ContactForm() {
             {/* Project Brief */}
             <div className="space-y-2">
               <label className="font-mono text-xs text-zinc-300 uppercase tracking-wider block font-semibold">
-                Project Brief & Requirements <span className="text-brand-orange">*</span>
+                Project Brief & Requirements <span className="text-brand-orange-text">*</span>
               </label>
               <textarea
                 required
@@ -246,7 +246,7 @@ export default function ContactForm() {
                   onChange={handleFileChange}
                   className="absolute inset-0 opacity-0 cursor-pointer w-full h-full"
                 />
-                <Upload className="w-6 h-6 text-brand-orange mx-auto mb-2" />
+                <Upload className="w-6 h-6 text-brand-orange-text mx-auto mb-2" />
                 <p className="text-xs font-mono text-zinc-300">
                   {files.length > 0
                     ? `${files.length} file(s) selected: ${files.map((f) => f.name).join(", ")}`
@@ -265,7 +265,7 @@ export default function ContactForm() {
               className="w-full flex items-center justify-center gap-3 bg-white text-zinc-950 hover:bg-zinc-200 py-4 text-xs font-mono font-bold uppercase tracking-wider transition-all duration-200 shadow-md disabled:opacity-50"
             >
               <span>{isSubmitting ? "Processing Enquiry..." : "Submit Project Enquiry"}</span>
-              <ArrowUpRight className="w-4 h-4 text-brand-orange" />
+              <ArrowUpRight className="w-4 h-4 text-brand-orange-text" />
             </button>
 
             <p className="text-[11px] font-mono text-zinc-400 text-center">

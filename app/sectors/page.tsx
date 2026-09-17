@@ -30,7 +30,7 @@ export default function SectorsPage() {
               className="scroll-mt-32 bg-white rounded-2xl p-8 sm:p-12 relative overflow-hidden shadow-md"
             >
               <div className="flex items-center justify-between pb-6 mb-8">
-                <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-widest">
+                <span className="font-mono text-xs font-bold text-brand-orange-text uppercase tracking-widest">
                   {sector.kicker}
                 </span>
                 <span className="font-mono text-2xl font-bold text-zinc-200">
@@ -50,13 +50,13 @@ export default function SectorsPage() {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                     <div className="bg-[#FAF7F2] p-4 rounded-xl space-y-2 shadow-sm">
-                      <span className="font-mono text-[11px] text-brand-orange uppercase tracking-wider block font-bold">
+                      <span className="font-mono text-[11px] text-brand-orange-text uppercase tracking-wider block font-bold">
                         TARGET CLIENT CATEGORIES:
                       </span>
                       <ul className="space-y-1 text-xs text-zinc-700 font-mono">
                         {sector.targetClients.map((client, i) => (
                           <li key={i} className="flex items-center gap-1.5">
-                            <CheckCircle2 className="w-3.5 h-3.5 text-brand-orange shrink-0" />
+                            <CheckCircle2 className="w-3.5 h-3.5 text-brand-orange-text shrink-0" />
                             <span>{client}</span>
                           </li>
                         ))}
@@ -64,7 +64,7 @@ export default function SectorsPage() {
                     </div>
 
                     <div className="bg-[#FAF7F2] p-4 rounded-xl space-y-2 shadow-sm">
-                      <span className="font-mono text-[11px] text-brand-orange uppercase tracking-wider block font-bold">
+                      <span className="font-mono text-[11px] text-brand-orange-text uppercase tracking-wider block font-bold">
                         DELIVERED STRENGTHS:
                       </span>
                       <ul className="space-y-1 text-xs text-zinc-700 font-mono">

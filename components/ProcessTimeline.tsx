@@ -81,7 +81,7 @@ export default function ProcessTimeline() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>
             <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-3">
-              <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-widest">
+              <span className="font-mono text-xs font-bold text-brand-orange-text uppercase tracking-widest">
                 DELIVERY MODEL
               </span>
               <span className="text-zinc-300">•</span>
@@ -90,7 +90,7 @@ export default function ProcessTimeline() {
               </span>
             </div>
             <h2 className="text-3xl sm:text-5xl font-extrabold text-zinc-900 tracking-tight">
-              One accountable path from <span className="text-brand-orange">brief to handover</span>
+              One accountable path from <span className="text-brand-orange-text">brief to handover</span>
             </h2>
           </div>
           <p className="text-base text-zinc-600 max-w-md font-mono leading-relaxed">
@@ -120,10 +120,10 @@ export default function ProcessTimeline() {
                   <div className="absolute top-0 left-0 right-0 h-[3px] bg-brand-orange rounded-t-xl" />
                 )}
                 <div className="flex items-center justify-between mb-2">
-                  <span className="font-mono text-xs font-bold text-brand-orange">
+                  <span className="font-mono text-xs font-bold text-brand-orange-text">
                     {stage.step}
                   </span>
-                  <Icon className={`w-4 h-4 ${isActive ? "text-brand-orange" : "text-zinc-300"}`} />
+                  <Icon className={`w-4 h-4 ${isActive ? "text-brand-orange-text" : "text-zinc-300"}`} />
                 </div>
                 <div className="font-mono text-[10px] uppercase text-zinc-400 tracking-wider mb-1 font-semibold">
                   {stage.label}
@@ -149,7 +149,7 @@ export default function ProcessTimeline() {
             >
               {/* Left Column Text Specs */}
               <div className="lg:col-span-7 space-y-6">
-                <div className="inline-flex items-center gap-2 bg-brand-orange/10 px-3 py-1 rounded-md text-xs font-mono text-brand-orange font-bold">
+                <div className="inline-flex items-center gap-2 bg-brand-orange/10 px-3 py-1 rounded-md text-xs font-mono text-brand-orange-text font-bold">
                   <span>STAGE {processStages[activeStage].step} OF 06</span>
                   <span className="mx-1 opacity-50">|</span>
                   <span>{processStages[activeStage].label}</span>
@@ -178,7 +178,7 @@ export default function ProcessTimeline() {
                         key={i}
                         className="flex items-center gap-2 bg-[#FAF7F2] p-2.5 rounded-lg text-xs text-zinc-700 font-mono shadow-xs"
                       >
-                        <CheckCircle2 className="w-3.5 h-3.5 text-brand-orange shrink-0" />
+                        <CheckCircle2 className="w-3.5 h-3.5 text-brand-orange-text shrink-0" />
                         <span className="truncate">{out}</span>
                       </div>
                     ))}

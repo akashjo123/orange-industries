@@ -45,7 +45,7 @@ export default function Hero() {
             className="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-zinc-50 tracking-tight leading-[1.08]"
           >
             Manufacturing environments. <br />
-            <span className="text-brand-orange font-light">Delivering experiences.</span>
+            <span className="text-brand-orange-text font-light">Delivering experiences.</span>
           </motion.h1>
 
           {/* Source PDF Hero Copy */}
@@ -67,7 +67,7 @@ export default function Hero() {
           >
             <Link
               href="/contact"
-              className="inline-flex items-center gap-3 bg-brand-orange/15 border border-brand-orange/20 hover:bg-brand-orange text-brand-orange hover:text-white px-8 py-4 text-xs font-mono font-bold uppercase tracking-wider transition-all duration-200 rounded-lg"
+              className="inline-flex items-center gap-3 bg-brand-orange/15 border border-brand-orange/20 hover:bg-brand-orange text-brand-orange-text hover:text-white px-8 py-4 text-xs font-mono font-bold uppercase tracking-wider transition-all duration-200 rounded-lg"
             >
               <span>Start a Project</span>
               <ArrowUpRight className="w-4 h-4" />

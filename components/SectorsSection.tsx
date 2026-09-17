@@ -18,7 +18,7 @@ export default function SectorsSection() {
         
         {/* Clean Normal Sub Heading */}
         <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-4">
-          <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-widest">
+          <span className="font-mono text-xs font-bold text-brand-orange-text uppercase tracking-widest">
             MARKETS & SECTORS
           </span>
           <span className="text-stone-400">•</span>
@@ -28,7 +28,7 @@ export default function SectorsSection() {
         </div>
 
         <h2 className="text-3xl sm:text-5xl font-extrabold text-stone-900 tracking-tight mb-12">
-          Three core strengths serve a <span className="text-brand-orange font-light">focused set of sectors</span>
+          Three core strengths serve a <span className="text-brand-orange-text font-light">focused set of sectors</span>
         </h2>
 
         {/* Sector Nav Tabs */}
@@ -68,7 +68,7 @@ export default function SectorsSection() {
 
             {/* Left Content */}
             <div className="lg:col-span-7 space-y-6 relative z-10">
-              <span className="font-mono text-xs font-bold text-brand-orange uppercase tracking-widest block">
+              <span className="font-mono text-xs font-bold text-brand-orange-text uppercase tracking-widest block">
                 {currentSector.kicker}
               </span>
 
@@ -105,7 +105,7 @@ export default function SectorsSection() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                   {currentSector.capabilitiesProvided.map((cap, idx) => (
                     <div key={idx} className="flex items-center gap-2 text-xs text-stone-800 font-mono">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-brand-orange shrink-0" />
+                      <CheckCircle2 className="w-3.5 h-3.5 text-brand-orange-text shrink-0" />
                       <span>{cap}</span>
                     </div>
                   ))}
