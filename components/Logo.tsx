@@ -19,16 +19,14 @@ export default function Logo({ className = "h-9", iconOnly = false, lightMode = 
         {/* Signature Orange Circle */}
         <circle cx="60" cy="60" r="58" fill="#FF5500" />
 
-        {/* 3D Isometric Structural Mark (White) */}
+        {/* 3-Piece Isometric M Mark (White) */}
         <g fill="#FFFFFF">
-          {/* Left Vertical Pillar */}
-          <path d="M 30 45 L 50 34 L 50 83 L 30 72 Z" />
-          {/* Top Connecting Bar */}
-          <path d="M 50 34 L 72 47 L 72 59 L 50 46 Z" />
-          {/* Right Vertical Pillar */}
-          <path d="M 72 47 L 92 34 L 92 72 L 72 84 Z" />
-          {/* Inner Fold Accent */}
-          <path d="M 50 58 L 72 70 L 72 84 L 50 72 Z" />
+          {/* Left Pillar (Right-facing plane) */}
+          <path d="M 36 39 L 14 50 L 14 94 L 36 83 Z" />
+          {/* Center Roof (Top-facing plane) */}
+          <path d="M 60 49 L 38 38 L 60 27 L 82 38 Z" />
+          {/* Right Pillar (Left-facing plane) */}
+          <path d="M 84 39 L 106 50 L 106 94 L 84 83 Z" />
         </g>
       </svg>
 
