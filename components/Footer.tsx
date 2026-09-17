@@ -70,17 +70,17 @@ export default function Footer() {
                 href="mailto:contact@orangeindustries.me" 
                 className="flex items-center gap-2 text-white hover:text-brand-orange-text transition-colors group font-mono"
               >
-                <Mail className="w-4 h-4 text-brand-orange-text" />
+                <Mail className="w-[1.125rem] h-[1.125rem] shrink-0 text-brand-orange-text" />
                 <span>contact@orangeindustries.me</span>
-                <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <ArrowUpRight className="w-3 h-3 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
               </a>
               <a 
                 href="tel:+97332230726" 
                 className="flex items-center gap-2 text-white hover:text-brand-orange-text transition-colors group font-mono"
               >
-                <Phone className="w-4 h-4 text-brand-orange-text" />
+                <Phone className="w-4 h-4 shrink-0 text-brand-orange-text" />
                 <span>+973 3223 0726</span>
-                <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <ArrowUpRight className="w-3 h-3 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
               </a>
               <a 
                 href="https://orangeindustries.me" 
@@ -88,7 +88,7 @@ export default function Footer() {
                 rel="noreferrer"
                 className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors font-mono"
               >
-                <Globe className="w-4 h-4 text-slate-500" />
+                <Globe className="w-4 h-4 shrink-0 text-slate-500" />
                 <span>orangeindustries.me</span>
               </a>
               <div className="pt-2">
