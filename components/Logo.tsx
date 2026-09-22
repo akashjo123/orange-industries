@@ -1,5 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import { Montserrat } from "next/font/google";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+});
 
 interface LogoProps {
   className?: string;
@@ -20,8 +26,8 @@ export default function Logo({ className = "h-9", iconOnly = false, lightMode = 
       />
 
       {!iconOnly && (
-        <div className="flex items-baseline font-sans text-xl sm:text-2xl tracking-tight leading-none">
-          <span className={`font-extrabold ${lightMode ? "text-slate-900" : "text-white"}`}>orange</span>
+        <div className={`flex items-baseline text-xl sm:text-2xl tracking-tight leading-none ${montserrat.className}`}>
+          <span className={`font-semibold ${lightMode ? "text-slate-900" : "text-white"}`}>orange</span>
           <span className={`font-light ${lightMode ? "text-slate-600" : "text-slate-300"}`}>industries</span>
         </div>
       )}
