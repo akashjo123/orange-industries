@@ -36,33 +36,30 @@ export default function CompanyIntro() {
               transition={{ duration: 0.6 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-stone-900 leading-[1.1] tracking-tight"
             >
-              A single accountable <br className="hidden sm:block" />
-              <span className="text-brand-orange-text font-light">manufacturing partner</span>
+              Specialists in <br className="hidden sm:block" />
+              <span className="text-brand-orange-text font-light">branded environments & visual branding</span>
             </motion.h2>
-
-            <div className="flex flex-wrap items-center gap-3 text-xs font-mono">
-              <span className="bg-white border border-stone-200 text-stone-800 px-4 py-2 rounded-full font-bold shadow-sm flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-brand-orange animate-pulse" />
-                {companyData.hubs.bahrain}
-              </span>
-              <span className="bg-white border border-stone-200 text-stone-800 px-4 py-2 rounded-full font-bold shadow-sm flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-stone-300" />
-                {companyData.hubs.gcc}
-              </span>
-            </div>
           </div>
 
           {/* Right Column: Source PDF Copy */}
           <div className="lg:col-span-6 space-y-8 lg:pl-8 border-l-0 lg:border-l border-stone-200">
-            <motion.p
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-stone-700 text-lg sm:text-xl leading-relaxed font-medium"
+              className="text-stone-700 text-lg sm:text-xl leading-relaxed font-medium space-y-6"
             >
-              {companyData.description}
-            </motion.p>
+              <p>
+                Orange Industries brings brands to life in physical spaces through signage, wayfinding, large-format printing, flags, retail displays and custom decorative elements.
+              </p>
+              <p className="text-base sm:text-lg">
+                We help businesses create distinctive storefronts, workplaces, retail spaces, hospitality venues and event environments. From design development and material selection to production and installation, our team brings every element together with consistent quality and attention to detail.
+              </p>
+              <p className="text-base sm:text-lg font-bold text-stone-900">
+                Based in Bahrain. Serving clients across the GCC.
+              </p>
+            </motion.div>
             
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -71,10 +68,10 @@ export default function CompanyIntro() {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <Link
-                href="/company"
+                href="/services"
                 className="inline-flex items-center gap-3 bg-brand-orange text-white px-8 py-4 rounded-xl font-mono text-xs uppercase tracking-wider hover:bg-stone-900 transition-all shadow-md hover:shadow-lg group font-bold"
               >
-                <span>Read Full Company Overview</span>
+                <span>Explore Our Solutions</span>
                 <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </Link>
             </motion.div>
