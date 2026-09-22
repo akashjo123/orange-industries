@@ -22,12 +22,12 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Orange Industries — Integrated GCC Manufacturing & Architectural Fabrication",
   description:
-    "Orange Industries engineers, manufactures and installs branded environments, architectural fabrication, signage and custom project solutions across Bahrain, Saudi Arabia, and the GCC region.",
+    "Orange Industries engineers, manufactures and installs branded environments, architectural fabrication, signage and custom project solutions across Bahrain, United Arab Emirates, and the GCC region.",
   keywords: [
     "Orange Industries Bahrain",
     "Architectural Fabrication GCC",
     "Metal Fabrication Bahrain",
-    "Wayfinding Signage Saudi Arabia",
+    "Wayfinding Signage United Arab Emirates",
     "Branded Environments",
     "CNC Laser Cutting Bahrain",
     "VIP Event Pavilions GCC",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Orange Industries — Manufacturing environments. Delivering experiences.",
     description:
-      "One accountable partner for engineered fabrication, branded environments, landmark signage, and custom project manufacturing across Bahrain & Saudi Arabia.",
+      "One accountable partner for engineered fabrication, branded environments, landmark signage, and custom project manufacturing across Bahrain & United Arab Emirates.",
     url: "https://orangeindustries.me",
     siteName: "Orange Industries Bahrain",
     locale: "en_US",

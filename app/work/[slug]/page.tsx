@@ -119,7 +119,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                 </div>
 
                 <p className="text-xs text-slate-600 font-mono leading-relaxed">
-                  Bahrain manufacturing base connected directly to site delivery in Saudi Arabia & GCC.
+                  Bahrain manufacturing base connected directly to site delivery in United Arab Emirates & GCC.
                 </p>
 
                 <div className="pt-2">

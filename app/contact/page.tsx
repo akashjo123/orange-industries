@@ -85,7 +85,7 @@ export default function ContactPage() {
                   <div className="space-y-2 pt-4">
                     <div className="flex items-center gap-2 text-zinc-900 font-bold text-sm">
                       <ShieldCheck className="w-4 h-4 text-brand-orange-text" />
-                      <span>KINGDOM OF SAUDI ARABIA</span>
+                      <span>UNITED ARAB EMIRATES</span>
                     </div>
                     <p className="text-zinc-500 pl-6 leading-relaxed">
                       Project Delivery, Logistics & Turnkey Site Installation Management

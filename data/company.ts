@@ -3,7 +3,7 @@ export const companyData = {
   legalName: "Orange Industries W.L.L.",
   tagline: "Manufacturing environments. Delivering experiences.",
   heroSubheadline: "Integrated manufacturing for branded environments, architectural fabrication, signage and custom project solutions.",
-  heroLocation: "Bahrain manufacturing • Saudi project delivery",
+  heroLocation: "Bahrain manufacturing • UAE project delivery",
   description: "Orange Industries coordinates design development, engineering, production and installation through one project team. Our connected production model reduces handovers between suppliers and gives the client clearer responsibility for programme, quality and site delivery.",
   hubs: {
     bahrain: "Bahrain — Manufacturing base",
@@ -28,7 +28,7 @@ export const companyData = {
     {
       number: "04",
       title: "REGIONAL EXECUTION",
-      description: "Bahrain manufacturing connected to client servicing and project delivery in Saudi Arabia."
+      description: "Bahrain manufacturing connected to client servicing and project delivery in United Arab Emirates."
     }
   ],
   productionDisciplines: [
@@ -62,8 +62,7 @@ export const companyData = {
   },
   regionalModel: {
     bahrain: "Bahrain: manufacturing and project management",
-    saudi: "Saudi Arabia: client-servicing / contracting / installation model",
-    uae: "UAE: planned expansion"
+    uae: "United Arab Emirates: client-servicing / contracting / installation model",
   },
   email: "contact@orangeindustries.me",
   website: "www.orangeindustries.me",
