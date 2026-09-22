@@ -26,7 +26,7 @@ export default function Footer() {
               </span>
               <span className="flex items-center gap-1.5 bg-white/5 px-3 py-1.5 rounded-md">
                 <ShieldCheck className="w-3.5 h-3.5 text-brand-orange-text" />
-                Saudi Project Delivery
+                UAE Project Delivery
               </span>
             </div>
           </div>
@@ -110,7 +110,7 @@ export default function Footer() {
           <div className="flex items-center gap-6">
             <span>BAHRAIN MANUFACTURING HUB</span>
             <span>·</span>
-            <span>SAUDI ARABIA DELIVERY</span>
+            <span>UNITED ARAB EMIRATES DELIVERY</span>
           </div>
         </div>
       </div>

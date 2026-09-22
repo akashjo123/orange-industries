@@ -50,7 +50,7 @@ export default function CompanyPage() {
                     <span>Integrated Manufacturing Base & Laser Hub</span>
                   </div>
                   <div className="bg-white p-5 rounded-xl shadow-sm font-mono text-xs text-zinc-700">
-                    <span className="text-brand-orange-text font-bold block mb-1">SAUDI ARABIA</span>
+                    <span className="text-brand-orange-text font-bold block mb-1">UNITED ARAB EMIRATES</span>
                     <span>Project Delivery & Site Contracting</span>
                   </div>
                 </div>
@@ -126,9 +126,9 @@ export default function CompanyPage() {
             </div>
 
             <div className="bg-white p-6 rounded-xl space-y-2 shadow-sm">
-              <span className="text-brand-orange-text font-bold block text-[10px]">SAUDI ARABIA & REGIONAL</span>
+              <span className="text-brand-orange-text font-bold block text-[10px]">UNITED ARAB EMIRATES & REGIONAL</span>
               <h4 className="font-bold text-zinc-900 text-base">Client Servicing & Delivery</h4>
-              <p className="text-zinc-600">{companyData.regionalModel.saudi}</p>
+              <p className="text-zinc-600">{companyData.regionalModel.uae}</p>
             </div>
           </div>
         </div>
