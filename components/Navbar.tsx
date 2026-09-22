@@ -43,8 +43,8 @@ export default function Navbar() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
-            ? "py-3 glass-nav-dark border-b border-zinc-800/80 shadow-lg"
-            : "py-6 bg-gradient-to-b from-[#141416]/95 via-[#141416]/70 to-transparent"
+            ? "py-3 bg-[#1f1d1d]/95 backdrop-blur-md border-b border-zinc-800 shadow-lg"
+            : "py-6 bg-[#1f1d1d] to-transparent"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
@@ -54,7 +54,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8 bg-[#222226]/90 px-7 py-2.5 border border-zinc-700/80 rounded-full backdrop-blur-md shadow-md">
+          <nav className="hidden md:flex items-center gap-8 px-2 py-2.5">
             {navLinks.map((link) => {
               const isActive =
                 pathname === link.href ||

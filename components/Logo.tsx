@@ -25,7 +25,7 @@ export default function Logo({ className = "h-9", iconOnly = false, lightMode = 
   }
 
   return (
-    <div className={`flex items-center select-none ${className} ${lightMode ? "text-slate-800" : "text-white"}`}>
+    <div className={`flex items-center select-none ${className} ${lightMode ? "text-[#58595b]" : "text-zinc-400"}`}>
       <LogoSVG className="h-full w-auto" />
     </div>
   );
