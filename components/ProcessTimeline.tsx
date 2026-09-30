@@ -54,7 +54,7 @@ const processStages = [
     icon: ShieldCheck,
     description: "Stage inspection, assembly and packing.",
     details: "Controlled paint spray finishing, bench assembly, electrical testing, and protective transport packing.",
-    image: "/images/cap_signage.jpg",
+    image: "/images/project2.png",
     outputs: ["Dry Film Finish Audit", "Stage Inspection Sign-off", "Protective Packing & Crating"]
   },
   {
@@ -76,7 +76,7 @@ export default function ProcessTimeline() {
     <section id="process" className="py-16 bg-[#FAF7F2] relative overflow-hidden">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>
@@ -108,13 +108,12 @@ export default function ProcessTimeline() {
               <button
                 key={stage.step}
                 onClick={() => setActiveStage(idx)}
-                className={`p-4 text-left transition-all duration-300 relative overflow-hidden rounded-xl ${
-                  isActive
+                className={`p-4 text-left transition-all duration-300 relative overflow-hidden rounded-xl ${isActive
                     ? "bg-white text-zinc-900 shadow-lg"
                     : isPassed
-                    ? "bg-white/80 text-zinc-700 hover:bg-white shadow-sm"
-                    : "bg-white/50 text-zinc-400 hover:bg-white/80"
-                }`}
+                      ? "bg-white/80 text-zinc-700 hover:bg-white shadow-sm"
+                      : "bg-white/50 text-zinc-400 hover:bg-white/80"
+                  }`}
               >
                 {isActive && (
                   <div className="absolute top-0 left-0 right-0 h-[3px] bg-brand-orange rounded-t-xl" />
