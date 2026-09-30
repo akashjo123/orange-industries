@@ -60,7 +60,7 @@ export const blogPosts: BlogPost[] = [
     category: "Industry Trends",
     date: "Jan 18, 2024",
     readTime: "4 min read",
-    image: "/images/cap_signage.jpg",
+    image: "/images/project2.png",
     excerpt: "How digital displays and traditional fabrication are merging to create hybrid wayfinding and advertising solutions for commercial real estate.",
     content: [
       "The line between static signage and digital architecture is blurring. We are increasingly seeing requests for hybrid structures that house complex digital display panels within bespoke fabricated environments.",

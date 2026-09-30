@@ -47,7 +47,7 @@ export const capabilities: Capability[] = [
     subtitle: "Internal • External • Illuminated • Directional",
     description: "A coordinated service from site survey and sign schedules through fabrication, illumination, installation and handover.",
     longDescription: "Internal, external, illuminated and directional signage systems planned around user movement and operational environments.",
-    image: "/images/cap_signage.jpg",
+    image: "/images/project2.png",
     items: [
       "External signage — Building identification, pylons and fascia applications",
       "Internal signage — Room identification, directories and statutory signs",
