@@ -2,7 +2,7 @@ export interface Project {
   slug: string;
   title: string;
   client: string;
-  category: "residential" | "commercial";
+  category: "events" | "signage" | "fabrication" | "custom";
   scopeList: string[];
   summary: string;
   challenge: string;
@@ -12,63 +12,93 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    slug: "ayroor-residence",
-    title: "Ayroor Residence",
-    client: "Private Homeowner",
-    category: "residential",
-    summary: "A complete rooftop solar installation designed to meet the energy needs of a modern home.",
-    challenge: "Maximizing energy generation on a limited roof space while maintaining aesthetic appeal.",
+    slug: "dp-world",
+    title: "DP World — Event branding",
+    client: "DP World",
+    category: "events",
+    summary: "A coordinated event environment requiring consistent brand presentation across multiple physical touchpoints.",
+    challenge: "A coordinated event environment requiring consistent brand presentation across multiple physical touchpoints.",
     scopeList: [
-      "Site survey and energy assessment",
-      "Rooftop solar panel installation",
-      "Net metering and commissioning"
+      "Large-format event branding",
+      "Branded structures and wayfinding",
+      "Production, finishing and site installation"
     ],
-    image: "/images/hero_industrial.jpg",
+    image: "/images/project_dpworld.jpg",
     featured: true,
   },
   {
-    slug: "kanjirappally-residence",
-    title: "Kanjirappally Residence",
-    client: "Private Homeowner",
-    category: "residential",
-    summary: "Residential solar energy system providing sustainable and reliable power.",
-    challenge: "Ensuring stable power integration with the existing grid infrastructure.",
+    slug: "formula-1",
+    title: "Formula 1 — Brand activation",
+    client: "Formula 1",
+    category: "events",
+    summary: "A time-critical activation requiring premium presentation, high visibility and controlled venue installation.",
+    challenge: "A time-critical activation requiring premium presentation, high visibility and controlled venue installation.",
     scopeList: [
-      "Custom solar system design",
-      "Installation and testing",
-      "Subsidy application support"
+      "Activation structures and display elements",
+      "Environmental graphics and finishes",
+      "Venue installation and removal"
     ],
     image: "/images/project_f1.jpg",
     featured: true,
   },
   {
-    slug: "elamakkara-project",
-    title: "Elamakkara Project",
-    client: "Local Business",
-    category: "commercial",
-    summary: "A commercial solar installation aimed at reducing operational electricity costs.",
-    challenge: "Executing the installation without disrupting daily business operations.",
+    slug: "ministry-of-health",
+    title: "Ministry of Health — Signage programme",
+    client: "Ministry of Health",
+    category: "signage",
+    summary: "A public-sector signage requirement focused on clarity, durability and installation within an operational environment.",
+    challenge: "A public-sector signage requirement focused on clarity, durability and installation within an operational environment.",
     scopeList: [
-      "Commercial solar planning",
-      "High-capacity panel installation",
-      "Grid integration and inspection"
+      "Directional and identification signage",
+      "Material and finish control",
+      "Phased production and installation"
     ],
     image: "/images/cap_signage.jpg",
     featured: true,
   },
   {
-    slug: "dp-world-tour-bahrain",
-    title: "DP World Tour Bahrain Championship",
-    client: "DP World Tour",
-    category: "commercial",
-    summary: "Comprehensive branding and structural setup for the Bapco Energies Bahrain Championship.",
-    challenge: "Delivering high-quality, large-scale event branding and structures within tight international sporting event deadlines.",
+    slug: "building-branding",
+    title: "Building branding — Façade branding",
+    client: "Commercial & Corporate Real Estate",
+    category: "fabrication",
+    summary: "A large-scale façade-branding requirement needing accurate measurement, engineered mounting and safe installation.",
+    challenge: "A large-scale façade-branding requirement needing accurate measurement, engineered mounting and safe installation.",
     scopeList: [
-      "Event branding and setup",
-      "Large-scale structure fabrication",
-      "Signage and display installation"
+      "Site survey and technical detailing",
+      "Large-format fabricated brand elements",
+      "Access planning and installation"
     ],
-    image: "/images/project_dpworld.jpg",
+    image: "/images/cap_fabrication.jpg",
+    featured: true,
+  },
+  {
+    slug: "aramco",
+    title: "Aramco — Trophies and corporate gifts",
+    client: "Aramco",
+    category: "custom",
+    summary: "A recognition programme requiring bespoke design, precise fabrication, premium finishing and presentation packaging.",
+    challenge: "A recognition programme requiring bespoke design, precise fabrication, premium finishing and presentation packaging.",
+    scopeList: [
+      "Design development and prototyping",
+      "Custom trophies and corporate gifts",
+      "Finishing, inspection and packaging"
+    ],
+    image: "/images/cap_fabrication.jpg",
+    featured: true,
+  },
+  {
+    slug: "dior",
+    title: "Dior — Event branding",
+    client: "Dior",
+    category: "events",
+    summary: "A luxury event environment requiring disciplined colour control, refined detailing and discreet site execution.",
+    challenge: "A luxury event environment requiring disciplined colour control, refined detailing and discreet site execution.",
+    scopeList: [
+      "Branded environmental elements",
+      "Premium finishes and detailing",
+      "Controlled production and installation"
+    ],
+    image: "/images/hero_industrial.jpg",
     featured: true,
   }
 ];
