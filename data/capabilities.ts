@@ -92,7 +92,7 @@ export const capabilities: Capability[] = [
     subtitle: "Awards • Gift boxes • Parasols • Tents",
     description: "Each project begins with feasibility, material selection and an agreed approval route.",
     longDescription: "Bespoke awards, corporate gifts, retail presentation packaging, and specialized engineered commissions outside standard catalogues.",
-    image: "/images/project.png",
+    image: "/images/project9.png",
     items: [
       "Awards and trophies — Custom forms, prototypes and premium finishes",
       "Corporate gifts — Branded items and presentation solutions",
