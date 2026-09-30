@@ -70,5 +70,20 @@ export const projects: Project[] = [
     ],
     image: "/images/project_dpworld.jpg",
     featured: true,
+  },
+  {
+    slug: "ministry-of-health-signage",
+    title: "Ministry of Health — Signage Programme",
+    client: "Ministry of Health, Kingdom of Bahrain",
+    category: "commercial",
+    summary: "Comprehensive signage and wayfinding programme for the National Genome Centre.",
+    challenge: "Delivering precise, high-quality architectural signage meeting strict government healthcare standards.",
+    scopeList: [
+      "Custom signage fabrication",
+      "Wayfinding strategy and implementation",
+      "Precision installation"
+    ],
+    image: "/images/genome_centre.jpg",
+    featured: true,
   }
 ];
