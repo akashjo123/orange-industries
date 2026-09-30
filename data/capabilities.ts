@@ -62,7 +62,7 @@ export const capabilities: Capability[] = [
     subtitle: "SEG • POS • Kiosks • Exhibition structures",
     description: "Retail and commercial display systems manufactured for visibility, durability and repeatable rollout.",
     longDescription: "SEG lightboxes, POS displays, kiosks, and digital display structures engineered for high visibility and rapid venue activation.",
-    image: "/images/project_dpworld.jpg",
+    image: "/images/project2 .png",
     items: [
       "SEG lightboxes — Wall mounted, freestanding and custom configurations",
       "POS displays — Product presentation and promotional structures",

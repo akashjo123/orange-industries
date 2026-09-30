@@ -23,7 +23,7 @@ export const projects: Project[] = [
       "Branded structures and wayfinding",
       "Production, finishing and site installation"
     ],
-    image: "/images/project_dpworld.jpg",
+    image: "/images/project2 .png",
     featured: true,
   },
   {

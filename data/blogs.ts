@@ -47,7 +47,7 @@ export const blogPosts: BlogPost[] = [
     category: "Technical Papers",
     date: "Feb 04, 2024",
     readTime: "8 min read",
-    image: "/images/project_dpworld.jpg",
+    image: "/images/project2 .png",
     excerpt: "A technical review of anti-corrosive coatings and marine-grade materials used in our industrial signage projects for DP World.",
     content: [
       "Coastal industrial environments present extreme challenges for exterior signage. High salinity, intense UV exposure, and wind sheer require specialized material specifications.",
