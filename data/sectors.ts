@@ -18,7 +18,7 @@ export const sectors: Sector[] = [
     kicker: "FAST PROGRAMMES • TEMPORARY ENVIRONMENTS • VENUE DELIVERY",
     description: "Programme discipline matters most when the opening date cannot move. Built for event companies, sporting bodies, and government activations.",
     longDescription: "Time-critical production, graphics, temporary structures, and venue delivery for international sporting events, government activations, and creative partners.",
-    image: "/images/project_f1.jpg",
+    image: "/images/project.png",
     targetClients: ["Event companies", "Sporting bodies", "Government activations", "Creative agency partners"],
     capabilitiesProvided: [
       "Fast programmes & venue delivery",

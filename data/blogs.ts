@@ -34,7 +34,7 @@ export const blogPosts: BlogPost[] = [
     category: "Case Studies",
     date: "Mar 12, 2024",
     readTime: "5 min read",
-    image: "/images/project_f1.jpg",
+    image: "/images/project.png",
     excerpt: "Exploring the high-stakes engineering and accelerated timelines required to deliver flawless structural assets for global motorsport events.",
     content: [
       "Delivering for Formula 1 requires a unique blend of structural integrity and premium aesthetic finishing. In this breakdown, our engineering team explores the fabrication methodologies used to create rapid-deployment hospitality structures.",
