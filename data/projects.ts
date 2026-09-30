@@ -38,7 +38,7 @@ export const projects: Project[] = [
       "Environmental graphics and finishes",
       "Venue installation and removal"
     ],
-    image: "/images/project_f1.jpg",
+    image: "/images/project.png",
     featured: true,
   },
   {

@@ -77,7 +77,7 @@ export const capabilities: Capability[] = [
     subtitle: "National • Corporate • Ceremonial systems",
     description: "Flag production and outdoor systems for corporate, government, ceremonial and promotional use.",
     longDescription: "National, corporate, indoor and outdoor flag formats, structural poles, bases, parasols, tents and tensioned fabric display systems.",
-    image: "/images/project_f1.jpg",
+    image: "/images/project.png",
     items: [
       "Flags — National, corporate, indoor and outdoor formats",
       "Flag accessories — Poles, bases and installation components",
