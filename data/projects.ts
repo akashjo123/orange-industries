@@ -38,7 +38,7 @@ export const projects: Project[] = [
       "Environmental graphics and finishes",
       "Venue installation and removal"
     ],
-    image: "/images/project.png",
+    image: "/images/project4.png",
     featured: true,
   },
   {
@@ -68,7 +68,7 @@ export const projects: Project[] = [
       "Large-format fabricated brand elements",
       "Access planning and installation"
     ],
-    image: "/images/cap_fabrication.jpg",
+    image: "/images/project.png",
     featured: true,
   },
   {
@@ -83,7 +83,7 @@ export const projects: Project[] = [
       "Custom trophies and corporate gifts",
       "Finishing, inspection and packaging"
     ],
-    image: "/images/cap_fabrication.jpg",
+    image: "/images/project5.png",
     featured: true,
   },
   {
@@ -98,7 +98,7 @@ export const projects: Project[] = [
       "Premium finishes and detailing",
       "Controlled production and installation"
     ],
-    image: "/images/hero_industrial.jpg",
+    image: "/images/project6.png",
     featured: true,
   }
 ];

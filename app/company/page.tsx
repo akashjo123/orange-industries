@@ -25,7 +25,7 @@ export default function CompanyPage() {
       <section className="py-12 bg-[#FAF7F2] text-zinc-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
+
             <div className="lg:col-span-7 space-y-6">
               <span className="font-mono text-xs font-bold text-brand-orange-text uppercase tracking-widest block">
                 COMPANY OVERVIEW
@@ -59,7 +59,7 @@ export default function CompanyPage() {
 
             <div className="lg:col-span-5 relative h-96 rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/images/hero_industrial.jpg"
+                src="/images/project6.png"
                 alt="Engineering Planning Session"
                 fill
                 className="object-cover"

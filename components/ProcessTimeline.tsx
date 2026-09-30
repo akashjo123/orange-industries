@@ -14,7 +14,7 @@ const processStages = [
     icon: FileText,
     description: "Requirements, survey, access and programme.",
     details: "Site survey, requirements analysis, access risk evaluation, and preliminary programme planning.",
-    image: "/images/hero_industrial.jpg",
+    image: "/images/project6.png",
     outputs: ["Client Requirements Brief", "Site Survey & Access Analysis", "Target Delivery Programme"]
   },
   {
@@ -24,7 +24,7 @@ const processStages = [
     icon: Layers,
     description: "Materials, method and feasibility.",
     details: "Material selection, manufacturing method evaluation, and structural design feasibility analysis.",
-    image: "/images/cap_fabrication.jpg",
+    image: "/images/project.png",
     outputs: ["Material Specification Matrix", "Manufacturing Method Plan", "Feasibility Sign-off"]
   },
   {
@@ -34,7 +34,7 @@ const processStages = [
     icon: Settings,
     description: "Shop drawings, samples and approvals.",
     details: "In-house CAD detailing, physical material samples, structural calculations, and documented client approvals.",
-    image: "/images/cap_fabrication.jpg",
+    image: "/images/project.png",
     outputs: ["Approved Shop Drawings", "Physical Material Samples", "Structural Calculation Pack"]
   },
   {
@@ -44,7 +44,7 @@ const processStages = [
     icon: Hammer,
     description: "Connected multi trade production.",
     details: "Multi-trade fabrication in our Bahrain facility combining metal, carpentry, acrylic, graphics printing, and sub-assembly.",
-    image: "/images/cap_fabrication.jpg",
+    image: "/images/project.png",
     outputs: ["Connected Multi-Trade Fabrication", "CNC Laser & Machine Work", "Quality Inspection Gates"]
   },
   {
