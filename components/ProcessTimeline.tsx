@@ -64,7 +64,7 @@ const processStages = [
     icon: Truck,
     description: "Site execution, snagging and handover.",
     details: "24/7 dedicated site installation crews executing site mounting, snagging resolution, and formal project handover.",
-    image: "/images/project_dpworld.jpg",
+    image: "/images/project2 .png",
     outputs: ["Certified Rigging Execution", "Snag-Free Handover Certificate", "Client Warranty Documentation"]
   }
 ];
@@ -109,10 +109,10 @@ export default function ProcessTimeline() {
                 key={stage.step}
                 onClick={() => setActiveStage(idx)}
                 className={`p-4 text-left transition-all duration-300 relative overflow-hidden rounded-xl ${isActive
-                    ? "bg-white text-zinc-900 shadow-lg"
-                    : isPassed
-                      ? "bg-white/80 text-zinc-700 hover:bg-white shadow-sm"
-                      : "bg-white/50 text-zinc-400 hover:bg-white/80"
+                  ? "bg-white text-zinc-900 shadow-lg"
+                  : isPassed
+                    ? "bg-white/80 text-zinc-700 hover:bg-white shadow-sm"
+                    : "bg-white/50 text-zinc-400 hover:bg-white/80"
                   }`}
               >
                 {isActive && (

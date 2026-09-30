@@ -50,7 +50,7 @@ export const sectors: Sector[] = [
     kicker: "ENGINEERING • DURABILITY • DOCUMENTATION • CONTROLLED INSTALLATION",
     description: "High-specification, durable signage networks, public sector wayfinding, and custom engineered fabrications.",
     longDescription: "Engineered signage and specialist manufacturing compliant with strict government, property, healthcare, and industrial standards across the Kingdom of Bahrain and United Arab Emirates.",
-    image: "/images/project_dpworld.jpg",
+    image: "/images/project2 .png",
     targetClients: ["Government ministries", "Property developers", "Airports", "Education & Healthcare", "Oil & Gas"],
     capabilitiesProvided: [
       "Engineering & structural calculations",
