@@ -87,3 +87,12 @@ export const projects: Project[] = [
     featured: true,
   }
 ];
+
+export const selectedPortfolioItems = [
+  "Interium signage",
+  "Arab League flags",
+  "Bahrain municipality flags",
+  "Exhibition environments",
+  "Cadillac activation",
+  "Syed Junaid gift boxes"
+];
