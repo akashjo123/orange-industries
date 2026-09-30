@@ -53,7 +53,7 @@ export const projects: Project[] = [
       "Material and finish control",
       "Phased production and installation"
     ],
-    image: "/images/cap_signage.jpg",
+    image: "/images/project_dpworld.jpg",
     featured: true,
   },
   {
