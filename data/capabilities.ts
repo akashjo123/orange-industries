@@ -17,7 +17,7 @@ export const capabilities: Capability[] = [
     subtitle: "Feature structures • Branded spaces • Thematic elements",
     description: "Feature structures, branded spaces and thematic elements engineered for physical environments.",
     longDescription: "Integrated production of decorative environments, feature structures, branded venue spaces and thematic architectural installations.",
-    image: "/images/hero_industrial.jpg",
+    image: "/images/project6.png",
     items: [
       "Feature structures",
       "Branded spaces",
@@ -31,7 +31,7 @@ export const capabilities: Capability[] = [
     subtitle: "MS • Aluminium • Stainless steel • Specialist finishes",
     description: "Custom fabricated elements for interiors, façades, public spaces and branded installations.",
     longDescription: "Custom fabricated architectural metalwork in mild steel, aluminium, stainless steel, acrylic, timber and composite finishes. Engineering drawings, material approvals, samples and stage inspections remain connected to the project programme.",
-    image: "/images/cap_fabrication.jpg",
+    image: "/images/project.png",
     items: [
       "Mild steel (MS)",
       "Aluminium",
@@ -77,7 +77,7 @@ export const capabilities: Capability[] = [
     subtitle: "National • Corporate • Ceremonial systems",
     description: "Flag production and outdoor systems for corporate, government, ceremonial and promotional use.",
     longDescription: "National, corporate, indoor and outdoor flag formats, structural poles, bases, parasols, tents and tensioned fabric display systems.",
-    image: "/images/project.png",
+    image: "/images/project4.png",
     items: [
       "Flags — National, corporate, indoor and outdoor formats",
       "Flag accessories — Poles, bases and installation components",
@@ -92,7 +92,7 @@ export const capabilities: Capability[] = [
     subtitle: "Awards • Gift boxes • Parasols • Tents",
     description: "Each project begins with feasibility, material selection and an agreed approval route.",
     longDescription: "Bespoke awards, corporate gifts, retail presentation packaging, and specialized engineered commissions outside standard catalogues.",
-    image: "/images/cap_fabrication.jpg",
+    image: "/images/project.png",
     items: [
       "Awards and trophies — Custom forms, prototypes and premium finishes",
       "Corporate gifts — Branded items and presentation solutions",

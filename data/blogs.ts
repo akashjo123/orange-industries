@@ -21,7 +21,7 @@ export const blogPosts: BlogPost[] = [
     category: "Project Insights",
     date: "Upcoming Release",
     readTime: "Future Article",
-    image: "/images/cap_fabrication.jpg",
+    image: "/images/project.png",
     excerpt: "Reserved for future project insights, technical manufacturing whitepapers, and approved client articles.",
     content: [
       "The supplied company profile documents reserve the blog space for future articles, technical whitepapers, and manufacturing project insights.",
@@ -34,7 +34,7 @@ export const blogPosts: BlogPost[] = [
     category: "Case Studies",
     date: "Mar 12, 2024",
     readTime: "5 min read",
-    image: "/images/project.png",
+    image: "/images/project4.png",
     excerpt: "Exploring the high-stakes engineering and accelerated timelines required to deliver flawless structural assets for global motorsport events.",
     content: [
       "Delivering for Formula 1 requires a unique blend of structural integrity and premium aesthetic finishing. In this breakdown, our engineering team explores the fabrication methodologies used to create rapid-deployment hospitality structures.",
