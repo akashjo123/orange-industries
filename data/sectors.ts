@@ -34,7 +34,7 @@ export const sectors: Sector[] = [
     kicker: "BRAND CONSISTENCY • MULTI-LOCATION ROLLOUTS • MAINTENANCE",
     description: "Multi-location rollouts, brand consistency, architectural fabrication, and commercial environments.",
     longDescription: "Coordinated production for financial institutions, telecommunications providers, automotive showrooms, shopping malls, and luxury hotels requiring strict brand consistency.",
-    image: "/images/project2.png",
+    image: "/images/project6.png",
     targetClients: ["Banks", "Telecom operators", "Automotive groups", "Shopping Malls", "Hotels"],
     capabilitiesProvided: [
       "Brand consistency across sites",
